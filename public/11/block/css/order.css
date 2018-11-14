@@ -1,0 +1,94 @@
+html,body{
+    height:100%;
+}
+.order{
+    height:100%;
+    width:100%;
+    background: url("../images/index_bg.png");
+    -webkit-background-size:100% 100%;
+    background-size:100% 100%;
+    padding-bottom: 1.52rem;
+    overflow: scroll;
+}
+.order>.nav{
+    width:100%;
+    height:0.98rem;
+    margin-bottom:0.2rem;
+}
+.order>.nav>li{
+    width:50%;
+    float: left;
+    height:0.98rem;
+    line-height:0.98rem;
+    color: #ffffff;
+    text-align: right;
+    font-size: 0.44rem;
+    font-family:"Microsoft YaHei UI";
+    /*background-color: #7cc4cd;*/
+    padding-right:0.2rem;
+}
+.order>.nav>li>img{
+    width:0.74rem;
+    margin-right:0.1rem;
+    vertical-align: top;
+    margin-top:0.12rem;
+}
+.order>.nav>li.active{
+    /*background-color: #496579;*/
+}
+.order>.order-info{
+    color: #ffffff;
+    font-size: 0.4rem;
+    font-family: microsoft yahei;
+    /* height: 100px; */
+    padding-top: 0.4rem;
+    padding-left: 0.4rem;
+}
+.order>.order-info>p:first-child{
+    font-size: 0.32rem;
+}
+.order>.order-info>p:nth-child(2){
+    text-align: right;
+    height: 1rem;
+    line-height: 1rem;
+    padding-right: 0.4rem;
+    display: none;
+}
+.order>.order-info>p:nth-child(3){
+    margin-top:0.4rem;
+    display: none;
+}
+.order>.tab{
+    height:1.52rem;
+    background-color: #202627;
+    position: fixed;
+    bottom:0;
+    width:100%;
+    font-family: "Microsoft YaHei UI";
+    font-size:0.32rem;
+}
+.order>.tab>ul>li{
+    float: left;
+    width:33.333333%;
+    height:1.5rem;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+}
+.order>.tab>ul>li>img{
+    position: absolute;
+    top:0%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:0.8rem;
+}
+.order>.tab>ul>li>img:first-child{
+    width:1.5rem;
+}
+.order>.tab>ul>li>p{
+    margin-top:0.8rem;
+}
+/*.order>.tab>ul>.toindex {*/
+    /*background-color: #65f0ed;*/
+    /*margin: 0 2%;*/
+/*}*/

@@ -1,0 +1,242 @@
+html,body{
+    height:100%;
+}
+.machine{
+    height:100%;
+    width:100%;
+    background: url("../images/index_bg.png");
+    -webkit-background-size:100% 100%;
+    background-size:100% 100%;
+    padding-bottom: 3rem;
+    overflow: scroll;
+}
+.machine>.nav{
+    width:100%;
+    height:0.98rem;
+    margin-bottom:0.2rem;
+}
+.machine>.nav>li{
+    width:50%;
+    float: left;
+    height:0.98rem;
+    line-height:0.98rem;
+    color: #ffffff;
+    text-align: right;
+    font-size: 0.44rem;
+    font-family:"Microsoft YaHei UI";
+    /*background-color: #7cc4cd;*/
+    padding-right:0.2rem;
+}
+.machine>.nav>li>img{
+    width:0.74rem;
+    margin-right:0.1rem;
+    vertical-align: top;
+    margin-top:0.12rem;
+}
+.machine>.nav>li.active{
+    /*background-color: #496579;*/
+}
+.machine>.mymachine{
+    display: none;
+}
+.machine>.mymachine>.machine-list{
+    /*height: 9.5rem;*/
+    /*overflow: scroll;*/
+    padding:0 0.36rem 0.36rem;
+    font-family: -webkit-pictograph;
+}
+.machine>.mymachine>.machine-list>li{
+    height:1.76rem;
+    margin-bottom:0.14rem;
+    background-color: rgba(124,196,205,0.3);
+}
+.machine>.mymachine>.machine-list>li>div{
+    float: left;
+}
+.machine>.mymachine>.machine-list>li>.machine-img{
+    width:2.12rem;
+    height:1.76rem;
+    text-align: center;
+}
+.machine>.mymachine>.machine-list>li>.machine-img>img{
+    width:1.4rem;
+    margin-top:0.18rem;
+}
+.machine>.mymachine>.machine-list>li>.desc{
+    color: #ffffff;
+}
+.machine>.mymachine>.machine-list>li>.desc>p{
+    font-size: 0.26rem;
+    height:0.3rem;
+    line-height:0.3rem;
+}
+.machine>.mymachine>.machine-list>li>.desc>.machine-level{
+    height:0.68rem;
+    font-size: 0.34rem;
+    line-height:0.68rem;
+    font-family: "Microsoft YaHei UI";
+}
+.machine>.mymachine>.machine-list>li>.desc>p:nth-child(2)>span:nth-child(2){
+    display: inline-block;
+    width: 2rem;
+	float:right;
+	text-align:left;
+	padding-left:0.2rem;
+}
+.machine>.mymachine>.machine-list>li>.desc>p:nth-child(3)>span:nth-child(2){
+	display: inline-block;
+    width: 2rem;
+	float:right;
+	text-align:left;
+	padding-left:0.2rem;
+}
+.machine>.mymachine>.total-calc{
+    color: #fff;
+    font-size: 0.34rem;
+    /* height: 0.38rem; */
+    line-height: 0.38rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.9rem;
+    text-align: center;
+    font-family: "Microsoft YaHei UI";
+    position: fixed;
+    bottom: 1.5rem;
+    width: 100%;
+    background-color: #000;
+}
+
+.machine>.machine-market{
+    display: block;
+}
+.machine>.machine-market>.order{
+    padding-left: 0.4rem;
+    color: #67ffc0;
+    font-family: microsoft yahei;
+    font-size: 0.28rem;
+    height: 0.3rem;
+    line-height:0.3rem;
+    display: none;
+}
+.machine>.machine-market>.machine-list{
+    padding:0 0.3rem 0.3rem;
+}
+.machine>.machine-market>.machine-list>li{
+    height:1.8rem;
+    margin-bottom:0.14rem;
+    background-color: rgba(124,196,205,0.3);
+}
+.machine>.machine-market>.machine-list>li>div{
+    float: left;
+}
+.machine>.machine-market>.machine-list>li>.machine-img{
+    width:2rem;
+    height:1.76rem;
+    text-align: center;
+}
+.machine>.machine-market>.machine-list>li>.machine-img>img{
+    width:1.4rem;
+    margin-top:0.18rem;
+}
+.machine>.machine-market>.machine-list>li>.desc{
+    color: #ffffff;
+    width:4.9rem;
+    font-family: -webkit-pictograph;
+}
+.machine>.machine-market>.machine-list>li>.desc>p{
+    font-size: 0.24rem;
+    height:0.3rem;
+    line-height:0.3rem;
+}
+.machine>.machine-market>.machine-list>li>.desc>.machine-level{
+    height:0.66rem;
+    font-size: 0.32rem;
+    line-height:0.66rem;
+    /*font-family: "Microsoft YaHei UI";*/
+}
+.machine>.machine-market>.machine-list>li>.desc>p:nth-child(4){
+    text-align: right;
+    font-size: 0.32rem;
+    height: 0.52rem;
+    line-height: 0.52rem;
+    font-family:"Microsoft YaHei UI";
+}
+.machine>.machine-market>.machine-list>li>.desc>p:nth-child(4)>input{
+    width: 0.4rem;
+    height: 0.52rem;
+    vertical-align: top;
+    text-align: center;
+    color: #65f0ed;
+    background: transparent;
+    font-size: 0.4rem;
+}
+.machine>.machine-market>.machine-list>li>.desc>p:nth-child(2)>span:nth-child(2){
+    display: inline-block;
+    width:2rem;
+	float:right;
+	text-align:left;
+}
+.machine>.machine-market>.machine-list>li>.desc>p:nth-child(3)>span:nth-child(2){
+	display: inline-block;
+    width:2rem;
+	float:right;
+	text-align:left;
+}
+.machine>.machine-market>.total-calc{
+    color: #ffffff;
+    font-size: 0.34rem;
+    text-align: right;
+    font-family: "Microsoft YaHei UI";
+    position: fixed;
+    bottom: 1.5rem;
+    width: 100%;
+    padding-bottom: 0.9rem;
+    padding-top:0.2rem;
+    background-color: #000;
+}
+.machine>.machine-market>.total-calc>.confirm{
+    display: inline-block;
+    width: 2rem;
+    height: 0.6rem;
+    background-color: #805716;
+    text-align: center;
+    line-height: 0.6rem;
+    color: #fff;
+    margin-left: 0.4rem;
+    margin-right:0.3rem;
+}
+
+
+.machine>.tab{
+    height:1.52rem;
+    background-color: #202627;
+    position: fixed;
+    bottom:0;
+    width:100%;
+    font-family: "Microsoft YaHei UI";
+    font-size:0.32rem;
+}
+.machine>.tab>ul>li{
+    float: left;
+    width:33.333333%;
+    height:1.5rem;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+}
+.machine>.tab>ul>li>img{
+    position: absolute;
+    top:0%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:0.8rem;
+}
+.machine>.tab>ul>li>img:first-child{
+    width:1.5rem;
+}
+.machine>.tab>ul>li>p{
+    margin-top:0.8rem;
+}
+/*.machine>.tab>ul>.toindex {*/
+    /*background-color: #65f0ed;*/
+    /*margin: 0 2%;*/
+/*}*/

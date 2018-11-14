@@ -1,0 +1,110 @@
+html,body{
+    height:100%;
+}
+.earnings{
+    height:100%;
+    width:100%;
+    background: url("../images/earnings_bg.png");
+    -webkit-background-size:100% 100%;
+    background-size:100% 100%;
+    padding-bottom: 2.3rem;
+    overflow: scroll;
+}
+.earnings>.chart{
+    height:5.36rem;
+    width:100%;
+    text-align: center;
+}
+.earnings>.chart>img{
+    width: 4rem;
+    margin-top: 0.68rem;
+}
+.earnings>.chart>.gif{
+    display: none;
+}
+.earnings>.total-calc{
+    width: 100%;
+    text-align: center;
+    color: #69fec1;
+    height: 0.64rem;
+    line-height: 0.64rem;
+    font-size: 0.42rem;
+    position: relative;
+    margin-bottom:0.4rem;
+}
+.earnings>.total-calc>img{
+    width: 5.2rem;
+    height:100%;
+    position: absolute;
+    left: 50%;
+    top:0;
+    margin-left: -2.6rem;
+}
+.earnings>.total-calc>p{
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    text-align: center;
+    color: #ffffff;
+    font-weight:600;
+    text-shadow: 0 2px 6px #000;
+}
+.earnings>.detail{
+    width:100%;
+    /*height: 5rem;*/
+    /*overflow: scroll;*/
+}
+.earnings>.detail>table{
+    width:96%;
+    color: #ffffff;
+    height:3rem;
+    margin:0 2%;
+    font-family: "Microsoft YaHei UI";
+}
+.earnings>.detail>table thead tr{
+    height:0.58rem;
+    font-size:0.36rem;
+    line-height:0.36rem;
+    text-align: left;
+}
+.earnings>.detail>table tbody tr{
+    font-size: 0.28rem;
+    height:0.54rem;
+    line-height:0.28rem;
+}
+.earnings>.tab{
+    height:1.52rem;
+    background-color: #202627;
+    position: fixed;
+    bottom:0;
+    width:100%;
+    font-family: "Microsoft YaHei UI";
+    font-size:0.32rem;
+}
+.earnings>.tab>ul>li{
+    float: left;
+    width:33.333333%;
+    height:1.5rem;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+}
+.earnings>.tab>ul>li>img{
+    position: absolute;
+    top:0%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:0.8rem;
+}
+.earnings>.tab>ul>li>img:first-child{
+    width:1.5rem;
+}
+.earnings>.tab>ul>li>p{
+    margin-top:0.8rem;
+}
+/*.earnings>.tab>ul>.toindex{*/
+    /*!*background-color: #65f0ed;*!*/
+    /*margin:0 2%;*/
+/*}*/

@@ -1,0 +1,176 @@
+html,body{
+    height:100%;
+}
+.loading{
+    width:100%;
+    height:100%;
+    background: url("../images/loading.jpg") no-repeat ;
+    background-position: center center;
+    -webkit-background-size:100%;
+    background-size:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    display: none;
+}
+.index{
+    height:100%;
+    background: url("../images/index_bg.png") no-repeat;
+    width:100%;
+    -webkit-background-size:100% 100%;
+    background-size:100% 100%;
+    padding-bottom: 1.52rem;
+    overflow: scroll;
+    /*opacity: 0;*/
+}
+.index>.coins{
+    color: #fff;
+    padding:0.35rem 0.34rem 0;
+}
+.index>.coins>.available{
+    font-size:0.42rem;
+    margin-bottom:0.16rem;
+    padding-left:1.8rem;
+}
+.index>.coins>.available>.title{
+    height:0.56rem;
+    line-height:0.56rem;
+}
+.index>.coins>.available>.number{
+    height:0.5rem;
+    line-height:0.5rem;
+    font-size: 0.42rem;
+    overflow: hidden;
+    font-family:STHeiTi;
+}
+.index>.coins>.freeze{
+    text-align: left;
+    margin-top:0.22rem;
+    margin-bottom:0.32rem;
+    font-size: 0.32rem;
+    font-family: "Microsoft YaHei UI";
+}
+.index>.coins>.freeze>div{
+    float: right;
+}
+.index>.coins>.freeze>div>p{
+    height:0.4rem;
+    line-height:0.4rem;
+}
+.index>.type{
+    font-size: 0.4rem;
+    height:0.74rem;
+    line-height:0.74rem;
+    background: url("../images/announcement_bg.png") center no-repeat;
+    -webkit-background-size:100% 100%;
+    background-size:154% 100%;
+    text-align: center;
+    color: #ffffff;
+    overflow: hidden;
+}
+.index>.type>img{
+    width: 0.54rem;
+    float: left;
+    margin-top: 0.15rem;
+    margin-left: 0.3rem;
+}
+.index>.type>div{
+    height:0.74rem;
+    line-height:0.74rem;
+    margin:0 0.2rem;
+    float: left;
+    overflow: hidden;
+}
+.index>.type>div>p{
+    height:0.74rem;
+    line-height:0.74rem;
+    transform: translate(6.2rem);
+    animation: round 6s linear infinite;
+    white-space: nowrap;
+}
+@keyframes round {
+    form {transform: translate(6.66rem)}
+    to {transform: translate(-100%)}
+}
+@-webkit-keyframes round {
+    form {transform: translate(6.66rem)}
+    to {transform: translate(-100%)}
+}
+@-o-keyframes round {
+    form {transform: translate(6.66rem)}
+    to {transform: translate(-100%)}
+}
+@-moz-keyframes round {
+    form {transform: translate(6.66rem)}
+    to {transform: translate(-100%)}
+}
+.index>.navigation{
+    padding:0.84rem 0.64rem 0.75rem;
+    font-size: 0.32rem;
+}
+.index>.navigation>ul{
+    width:100%;
+}
+.index>.navigation>ul>li{
+    /*width:1.9rem;*/
+    width:30%;
+    /*height:1.9rem;*/
+    float: left;
+    color: #ffffff;
+    margin-bottom:0.4rem;
+    padding-top:0.2rem;
+    text-align: center;
+    font-family: "Microsoft YaHei UI";
+    position: relative;
+}
+.index>.navigation>ul>li>a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+.index>.navigation>ul>.machine,
+.index>.navigation>ul>.trading,
+.index>.navigation>ul>.help{
+    margin:0 5%;
+}
+.index>.navigation>ul>li>img{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 0;
+}
+.index>.tab{
+    height:1.52rem;
+    background-color: #202627;
+    position: fixed;
+    bottom:0;
+    width:100%;
+    font-family: "Microsoft YaHei UI";
+    font-size:0.32rem;
+}
+.index>.tab>ul>li{
+    float: left;
+    width:33.333333%;
+    height:1.5rem;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+}
+.index>.tab>ul>li>img{
+    position: absolute;
+    top:0%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:0.8rem;
+}
+.index>.tab>ul>li>img:first-child{
+    width:1.5rem;
+}
+.index>.tab>ul>li>p{
+    margin-top:0.8rem;
+}

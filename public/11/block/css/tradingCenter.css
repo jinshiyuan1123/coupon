@@ -1,0 +1,113 @@
+html,body{
+    height:100%;
+}
+.tradingCnter{
+    height:100%;
+    width:100%;
+    background: url("../images/index_bg.png");
+    -webkit-background-size:100% 100%;
+    background-size:100% 100%;
+    padding-bottom: 1.52rem;
+    overflow: scroll;
+}
+.tradingCnter>.title{
+    width:100%;
+    background-color: #66a0b4;
+    color: #ffffff;
+    text-align: left;
+    line-height:1.44rem;
+    height:1.44rem;
+    font-family: "Microsoft YaHei UI";
+    font-size: 0.44rem;
+    padding-left:0.4rem;
+    margin-bottom:0.42rem;
+}
+.tradingCnter>ul>li{
+    height:2.5rem;
+    background-color: rgba(102,160,180,0.3);
+    color: #ffffff;
+    margin-bottom:0.2rem;
+}
+.tradingCnter>ul>li>.plan-name{
+    height:1.1rem;
+    line-height:1.1rem;
+    font-size: 0.5rem;
+    font-family:"Microsoft YaHei UI";
+    padding-left:0.4rem;
+}
+.tradingCnter>ul>li>.plan-desc{
+    height:0.36rem;
+    line-height:0.36rem;
+    font-size: 0.36rem;
+    font-family:"Microsoft YaHei UI";
+    padding-left:0.4rem;
+}
+.tradingCnter>.plan-list{
+    /*height: 8.6rem;*/
+    /*overflow: scroll;*/
+}
+.tradingCnter>ul>li>div{
+    height:1.04rem;
+    line-height:1.04rem;
+    text-align: right;
+    font-size: 0.32rem;
+    font-family:"Microsoft YaHei UI";
+}
+.tradingCnter>ul>li>div>input{
+    width: 0.4rem;
+    line-height: 0.4rem;
+    vertical-align: middle;
+    text-align: center;
+    color: #65f0ed;
+    background: transparent;
+    font-size: 0.4rem;
+}
+.tradingCnter>.total-calc{
+    color: #67ffc0;
+    font-size:0.38rem;
+    text-align: right;
+    font-family: "Microsoft YaHei UI";
+}
+.tradingCnter>.total-calc>.confirm{
+    display: inline-block;
+    width: 2rem;
+    height: 0.6rem;
+    background-color: #598fa2;
+    text-align: center;
+    line-height: 0.6rem;
+    color: #fff;
+    margin-left: 0.4rem;
+    margin-right:0.2rem;
+}
+.tradingCnter>.order{
+    padding-left: 0.4rem;
+    color: #67ffc0;
+    font-family: microsoft yahei;
+    font-size: 0.28rem;
+    height: 0.3rem;
+    display: none;
+}
+.tradingCnter>.tab{
+    height:1.52rem;
+    position: fixed;
+    bottom:0;
+    width:100%;
+    font-family: "Microsoft YaHei UI";
+    font-size:0.32rem;
+}
+.tradingCnter>.tab>ul>li{
+    float: left;
+    width:32%;
+    height:1.52rem;
+    text-align: center;
+    color: #ffffff;
+    background-color: #3e93f9;
+}
+.tradingCnter>.tab>ul>li>img{
+    width:0.8rem;
+    margin-top:0.2rem;
+}
+.tradingCnter>.tab>ul>.toindex{
+    background-color: #65f0ed;
+    margin:0 2%;
+}

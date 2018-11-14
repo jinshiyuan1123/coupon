@@ -1,0 +1,125 @@
+html,body{
+    height:100%;
+}
+.account{
+    height:100%;
+    width:100%;
+    background: url("../images/index_bg.png");
+    -webkit-background-size:100% 100%;
+    background-size:100% 100%;
+    padding-top:0.4rem;
+    padding-bottom:2.4rem;
+    overflow: scroll;
+}
+.account>.title{
+    background: url("../images/infotitle_bg.png") center bottom no-repeat;
+    -webkit-background-size:4.1rem 0.34rem;
+    background-size:4.1rem 0.34rem;
+    height:1rem;
+    /*line-height:1.08;*/
+    font-size: 0.58rem;
+    color: #d8c45d;
+    text-align: center;
+    font-family: "Microsoft YaHei UI";
+    margin-bottom:0.3rem;
+}
+.account>.account-form{
+    font-family: "Microsoft YaHei UI";
+}
+.account>.account-form>.person-ID{
+    position: relative;
+}
+.account>.account-form>.person-ID>.photo{
+    position: absolute;
+    width: 0.98rem;
+    top: 0;
+    right: 0.84rem;
+    border-left:1px solid #cccccc;
+    background-color: #fff;
+}
+.account-form>.person-ID>.photo>input{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.account-form>.person-ID>.photo>img{
+    position: absolute;
+    top: 0.12rem;
+    left: 0.26rem;
+    width: 0.44rem;
+    vertical-align: top;
+    margin-top: 0rem;
+}
+.account>.account-form>.nickname>input{
+    color: #cccccc;
+}
+.account>.account-form>div{
+    height:0.7rem;
+    margin-bottom:0.1rem;
+    padding:0 0.84rem;
+}
+.account>.account-form>div>div{
+    height:0.7rem;
+    width:1rem;
+    background-color: #203536;
+    float: left;
+    text-align: center;
+}
+.account>.account-form>div>div>img{
+    width:0.44rem;
+    margin-top:0.08rem;
+}
+.account>.account-form>div>input{
+    height:0.7rem;
+    background-color: #fff;
+    width:4.8rem;
+    padding-left:0.4rem;
+    font-size:0.28rem;
+    font-family: "Microsoft YaHei UI";
+}
+.account>.account-form>.updateInfo{
+    text-align: center;
+    line-height: 0.4rem;
+    /*width: 1.4rem;*/
+    height: 0.4rem;
+    background-color: #5b3f12;
+    padding: 0 0.1rem;
+    margin: 0 0.84rem;
+    font-size: 0.28rem;
+    color: #fff;
+    float: right;
+}
+.account>.tab{
+    height:1.52rem;
+    background-color: #202627;
+    position: fixed;
+    bottom:0;
+    width:100%;
+    font-family: "Microsoft YaHei UI";
+    font-size:0.32rem;
+}
+.account>.tab>ul>li{
+    float: left;
+    width:33.333333%;
+    height:1.5rem;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+}
+.account>.tab>ul>li>img{
+    position: absolute;
+    top:0%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:0.8rem;
+}
+.account>.tab>ul>li>img:first-child{
+    width:1.5rem;
+}
+.account>.tab>ul>li>p{
+    margin-top:0.8rem;
+}
+/*.account>.tab>ul>.toindex{*/
+    /*background-color: #65f0ed;*/
+    /*margin:0 2%;*/
+/*}*/

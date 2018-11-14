@@ -1,0 +1,128 @@
+
+@charset "utf-8";
+*,
+::before,
+::after{
+    /* 清除默认的间距和边距*/
+    padding: 0;
+    margin: 0;
+    /*去除移动端特有的点击高亮效果*/
+    -webkit-tap-highlight-color: transparent;
+    /*设置所有的盒子都以边框开始计算宽度*/
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+    padding-bottom: 0.6rem;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #666;
+}
+body{
+    font: 12px/150% Arial, Verdana, "\5b8b\4f53",sans-serif;
+    color: #666;
+    background-color:#ffffff;
+
+}
+a{
+    color: #333;
+    text-decoration: none;
+}
+a:hover{
+    color: #333;
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+input{
+    border: none;
+    /*获取焦点时的外边框*/
+    outline: none;
+    /*清除移动端默认的表单样式:-webkit-appearance是用来改变按钮和其他控件的外观，使其外观类似于原生控件.
+    通常我们可以在相应的元素上加上-webkit-appearance: none;来移除原生控件样式。*/
+    -webkit-appearance: none;
+}
+
+.clearfix::before,
+.clearfix::after{
+    /*content:"\200B"; content:"\200B";这个参数，Unicode字符里有一个“零宽度空格”，即 U+200B，代替原来的“”，可以缩减代码量。而且不再使用visibility:hidden。
+    display:block;
+    height:0;
+    clear:both;*/
+    content: "";
+    height: 0;
+    line-height:0;
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+
+
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";
+}
+
+select, input {
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+/*禁止手动修改大小*/
+textarea {
+    resize: none;
+}
+/*去掉图片底部默认空白缝隙*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+/*合并外连线*/
+table {
+    border-collapse: collapse;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+
+/*css初始化完成*/
+
+

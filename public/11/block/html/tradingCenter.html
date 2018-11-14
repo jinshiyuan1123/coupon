@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <title>商会中心</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/tradingCenter.css">
+    <script src="../js/jquery-1.11.0.min.js"></script>
+	<script src="../js/jquery.json.js"></script>
+    <script>
+        (function(designWidth, maxWidth) {
+            var doc = document,
+                win = window,
+                docEl = doc.documentElement,
+                remStyle = document.createElement("style"),
+                tid;
+
+            function refreshRem() {
+                var width = docEl.getBoundingClientRect().width;
+                maxWidth = maxWidth || 540;
+                width>maxWidth && (width=maxWidth);
+                var rem = width * 100 / designWidth;
+                remStyle.innerHTML = 'html{font-size:' + rem + 'px;}';
+            }
+
+            if (docEl.firstElementChild) {
+                docEl.firstElementChild.appendChild(remStyle);
+            } else {
+                var wrap = doc.createElement("div");
+                wrap.appendChild(remStyle);
+                doc.write(wrap.innerHTML);
+                wrap = null;
+            }
+            //要等 wiewport 设置好后才能执行 refreshRem，不然 refreshRem 会执行2次；
+            refreshRem();
+
+            win.addEventListener("resize", function() {
+                clearTimeout(tid); //防止执行两次
+                tid = setTimeout(refreshRem, 300);
+            }, false);
+
+            win.addEventListener("pageshow", function(e) {
+                if (e.persisted) { // 浏览器后退的时候重新计算
+                    clearTimeout(tid);
+                    tid = setTimeout(refreshRem, 300);
+                }
+            }, false);
+
+            if (doc.readyState === "complete") {
+                doc.body.style.fontSize = "16px";
+            } else {
+                doc.addEventListener("DOMContentLoaded", function(e) {
+                    doc.body.style.fontSize = "16px";
+                }, false);
+            }
+        })(750, 750);
+    </script>
+</head>
+<body>
+<div class="tradingCnter">
+    <div class="title">交易中心</div>
+    <ul class="plan-list">
+
+    </ul>
+    <div class="total-calc"> <span>總價 ：0</span><span class="confirm">確認</span></div>
+    <p class="order">订单号 : </p>
+    <div class="tab">
+        <ul class="clearfix">
+            <li class="prepage"><img src="../images/prepge.png" alt=""><p>上一頁</p></li>
+            <li class="toindex"><img src="../images/home.png" alt=""><p>首頁</p></li>
+            <li class="back"><img src="../images/info.png" alt=""><p>信息中心</p></li>
+        </ul>
+    </div>
+</div>
+<script src="../js/tradingCenter.js"></script>
+</body>
+</html>

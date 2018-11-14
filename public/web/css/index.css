@@ -1,0 +1,2697 @@
+/*! portal-pc-static - git - 2018-08-28 14:05:10 */
+.select2-container {
+	box-sizing: border-box;
+	display: inline-block;
+	margin: 0;
+	position: relative;
+	vertical-align: middle
+}
+
+.select2-container .select2-selection--single {
+	box-sizing: border-box;
+	cursor: pointer;
+	display: block;
+	height: 28px;
+	user-select: none;
+	-webkit-user-select: none
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+	display: block;
+	padding-left: 8px;
+	padding-right: 20px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
+
+.select2-container[dir=rtl] .select2-selection--single .select2-selection__rendered {
+	padding-right: 8px;
+	padding-left: 20px
+}
+
+.select2-container .select2-selection--multiple {
+	box-sizing: border-box;
+	cursor: pointer;
+	display: block;
+	min-height: 32px;
+	user-select: none;
+	-webkit-user-select: none
+}
+
+.select2-container .select2-selection--multiple .select2-selection__rendered {
+	display: inline-block;
+	overflow: hidden;
+	padding-left: 8px;
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
+
+.select2-container .select2-search--inline {
+	float: left
+}
+
+.select2-container .select2-search--inline .select2-search__field {
+	box-sizing: border-box;
+	border: none;
+	font-size: 100%;
+	margin-top: 5px
+}
+
+.select2-container .select2-search--inline .select2-search__field::-webkit-search-cancel-button {
+	-webkit-appearance: none
+}
+
+.select2-dropdown {
+	background-color: #fff;
+	border: 1px solid #aaa;
+	border-radius: 4px;
+	box-sizing: border-box;
+	display: block;
+	position: absolute;
+	left: -100000px;
+	width: 100%;
+	z-index: 1051
+}
+
+.select2-results {
+	display: block
+}
+
+.select2-results__options {
+	list-style: none;
+	margin: 0;
+	padding: 0
+}
+
+.select2-results__option {
+	padding: 6px;
+	user-select: none;
+	-webkit-user-select: none
+}
+
+.select2-results__option[aria-selected] {
+	cursor: pointer
+}
+
+.select2-container--open .select2-dropdown {
+	left: 0
+}
+
+.select2-container--open .select2-dropdown--above {
+	border-bottom: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0
+}
+
+.select2-container--open .select2-dropdown--below {
+	border-top: none;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0
+}
+
+.select2-search--dropdown {
+	display: block;
+	padding: 4px
+}
+
+.select2-search--dropdown .select2-search__field {
+	padding: 4px;
+	width: 100%;
+	box-sizing: border-box
+}
+
+.select2-search--dropdown .select2-search__field::-webkit-search-cancel-button {
+	-webkit-appearance: none
+}
+
+.select2-search--dropdown.select2-search--hide {
+	display: none
+}
+
+.select2-close-mask {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	display: block;
+	position: fixed;
+	left: 0;
+	top: 0;
+	min-height: 100%;
+	min-width: 100%;
+	height: auto;
+	width: auto;
+	opacity: 0;
+	z-index: 99;
+	background-color: #fff;
+	filter: alpha(opacity=0)
+}
+
+.select2-container--default .select2-selection--single {
+	background-color: #fff;
+	border: 1px solid #aaa;
+	border-radius: 4px
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+	color: #444;
+	line-height: 28px
+}
+
+.select2-container--default .select2-selection--single .select2-selection__clear {
+	cursor: pointer;
+	float: right;
+	font-weight: 700
+}
+
+.select2-container--default .select2-selection--single .select2-selection__placeholder {
+	color: #999
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+	height: 26px;
+	position: absolute;
+	top: 1px;
+	right: 1px;
+	width: 20px
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+	border-color: #888 transparent transparent;
+	border-style: solid;
+	border-width: 5px 4px 0;
+	height: 0;
+	left: 50%;
+	margin-left: -4px;
+	margin-top: -2px;
+	position: absolute;
+	top: 50%;
+	width: 0
+}
+
+.select2-container--default[dir=rtl] .select2-selection--single .select2-selection__clear {
+	float: left
+}
+
+.select2-container--default[dir=rtl] .select2-selection--single .select2-selection__arrow {
+	left: 1px;
+	right: auto
+}
+
+.select2-container--default.select2-container--disabled .select2-selection--single {
+	background-color: #eee;
+	cursor: default
+}
+
+.select2-container--default.select2-container--disabled .select2-selection--single .select2-selection__clear {
+	display: none
+}
+
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+	border-color: transparent transparent #888;
+	border-width: 0 4px 5px
+}
+
+.select2-container--default .select2-selection--multiple {
+	background-color: #fff;
+	border: 1px solid #aaa;
+	border-radius: 4px;
+	cursor: text
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__rendered {
+	box-sizing: border-box;
+	list-style: none;
+	margin: 0;
+	padding: 0 5px;
+	width: 100%
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__placeholder {
+	color: #999;
+	margin-top: 5px;
+	float: left
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__clear {
+	cursor: pointer;
+	float: right;
+	font-weight: 700;
+	margin-top: 5px;
+	margin-right: 10px
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+	background-color: #e4e4e4;
+	border: 1px solid #aaa;
+	border-radius: 4px;
+	cursor: default;
+	float: left;
+	margin-right: 5px;
+	margin-top: 5px;
+	padding: 0 5px
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+	color: #999;
+	cursor: pointer;
+	display: inline-block;
+	font-weight: 700;
+	margin-right: 2px
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover {
+	color: #333
+}
+
+.select2-container--default[dir=rtl] .select2-selection--multiple .select2-selection__choice,.select2-container--default[dir=rtl] .select2-selection--multiple .select2-selection__placeholder {
+	float: right
+}
+
+.select2-container--default[dir=rtl] .select2-selection--multiple .select2-selection__choice {
+	margin-left: 5px;
+	margin-right: auto
+}
+
+.select2-container--default[dir=rtl] .select2-selection--multiple .select2-selection__choice__remove {
+	margin-left: 2px;
+	margin-right: auto
+}
+
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+	border: 1px solid #000;
+	outline: 0
+}
+
+.select2-container--default.select2-container--disabled .select2-selection--multiple {
+	background-color: #eee;
+	cursor: default
+}
+
+.select2-container--default.select2-container--disabled .select2-selection__choice__remove {
+	display: none
+}
+
+.select2-container--default.select2-container--open.select2-container--above .select2-selection--multiple,.select2-container--default.select2-container--open.select2-container--above .select2-selection--single {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0
+}
+
+.select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple,.select2-container--default.select2-container--open.select2-container--below .select2-selection--single {
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+	border: 1px solid #aaa
+}
+
+.select2-container--default .select2-search--inline .select2-search__field {
+	background: 0 0;
+	border: none;
+	outline: 0
+}
+
+.select2-container--default .select2-results>.select2-results__options {
+	overflow-y: auto
+}
+
+.select2-container--default .select2-results__option[role=group] {
+	padding: 0
+}
+
+.select2-container--default .select2-results__option[aria-disabled=true] {
+	color: #999
+}
+
+.select2-container--default .select2-results__option[aria-selected=true] {
+	background-color: #ddd
+}
+
+.select2-container--default .select2-results__option .select2-results__option {
+	padding-left: 1em
+}
+
+.select2-container--default .select2-results__option .select2-results__option .select2-results__group {
+	padding-left: 0
+}
+
+.select2-container--default .select2-results__option .select2-results__option .select2-results__option {
+	margin-left: -1em;
+	padding-left: 2em
+}
+
+.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option {
+	margin-left: -2em;
+	padding-left: 3em
+}
+
+.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option {
+	margin-left: -3em;
+	padding-left: 4em
+}
+
+.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option {
+	margin-left: -4em;
+	padding-left: 5em
+}
+
+.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option {
+	margin-left: -5em;
+	padding-left: 6em
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+	background-color: #5897fb;
+	color: #fff
+}
+
+.select2-container--default .select2-results__group {
+	cursor: default;
+	display: block;
+	padding: 6px
+}
+
+.select2-container--classic .select2-selection--single {
+	background-color: #f6f6f6;
+	border: 1px solid #aaa;
+	border-radius: 4px;
+	outline: 0;
+	background-image: -webkit-linear-gradient(top,#fff 50%,#eee 100%);
+	background-image: -o-linear-gradient(top,#fff 50%,#eee 100%);
+	background-image: linear-gradient(to bottom,#fff 50%,#eee 100%);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#eeeeee', GradientType=0)
+}
+
+.select2-container--classic .select2-selection--single:focus {
+	border: 1px solid #5897fb
+}
+
+.select2-container--classic .select2-selection--single .select2-selection__rendered {
+	color: #444;
+	line-height: 28px
+}
+
+.select2-container--classic .select2-selection--single .select2-selection__clear {
+	cursor: pointer;
+	float: right;
+	font-weight: 700;
+	margin-right: 10px
+}
+
+.select2-container--classic .select2-selection--single .select2-selection__placeholder {
+	color: #999
+}
+
+.select2-container--classic .select2-selection--single .select2-selection__arrow {
+	background-color: #ddd;
+	border: none;
+	border-left: 1px solid #aaa;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	height: 26px;
+	position: absolute;
+	top: 1px;
+	right: 1px;
+	width: 20px;
+	background-image: -webkit-linear-gradient(top,#eee 50%,#ccc 100%);
+	background-image: -o-linear-gradient(top,#eee 50%,#ccc 100%);
+	background-image: linear-gradient(to bottom,#eee 50%,#ccc 100%);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#cccccc', GradientType=0)
+}
+
+.select2-container--classic .select2-selection--single .select2-selection__arrow b {
+	border-color: #888 transparent transparent;
+	border-style: solid;
+	border-width: 5px 4px 0;
+	height: 0;
+	left: 50%;
+	margin-left: -4px;
+	margin-top: -2px;
+	position: absolute;
+	top: 50%;
+	width: 0
+}
+
+.select2-container--classic[dir=rtl] .select2-selection--single .select2-selection__clear {
+	float: left
+}
+
+.select2-container--classic[dir=rtl] .select2-selection--single .select2-selection__arrow {
+	border: none;
+	border-right: 1px solid #aaa;
+	border-radius: 4px 0 0 4px;
+	left: 1px;
+	right: auto
+}
+
+.select2-container--classic.select2-container--open .select2-selection--single {
+	border: 1px solid #5897fb
+}
+
+.select2-container--classic.select2-container--open .select2-selection--single .select2-selection__arrow {
+	background: 0 0;
+	border: none
+}
+
+.select2-container--classic.select2-container--open .select2-selection--single .select2-selection__arrow b {
+	border-color: transparent transparent #888;
+	border-width: 0 4px 5px
+}
+
+.select2-container--classic.select2-container--open.select2-container--above .select2-selection--single {
+	border-top: none;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	background-image: -webkit-linear-gradient(top,#fff 0,#eee 50%);
+	background-image: -o-linear-gradient(top,#fff 0,#eee 50%);
+	background-image: linear-gradient(to bottom,#fff 0,#eee 50%);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#eeeeee', GradientType=0)
+}
+
+.select2-container--classic.select2-container--open.select2-container--below .select2-selection--single {
+	border-bottom: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	background-image: -webkit-linear-gradient(top,#eee 50%,#fff 100%);
+	background-image: -o-linear-gradient(top,#eee 50%,#fff 100%);
+	background-image: linear-gradient(to bottom,#eee 50%,#fff 100%);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#ffffff', GradientType=0)
+}
+
+.select2-container--classic .select2-selection--multiple {
+	background-color: #fff;
+	border: 1px solid #aaa;
+	border-radius: 4px;
+	cursor: text;
+	outline: 0
+}
+
+.select2-container--classic .select2-selection--multiple:focus {
+	border: 1px solid #5897fb
+}
+
+.select2-container--classic .select2-selection--multiple .select2-selection__rendered {
+	list-style: none;
+	margin: 0;
+	padding: 0 5px
+}
+
+.select2-container--classic .select2-selection--multiple .select2-selection__clear {
+	display: none
+}
+
+.select2-container--classic .select2-selection--multiple .select2-selection__choice {
+	background-color: #e4e4e4;
+	border: 1px solid #aaa;
+	border-radius: 4px;
+	cursor: default;
+	float: left;
+	margin-right: 5px;
+	margin-top: 5px;
+	padding: 0 5px
+}
+
+.select2-container--classic .select2-selection--multiple .select2-selection__choice__remove {
+	color: #888;
+	cursor: pointer;
+	display: inline-block;
+	font-weight: 700;
+	margin-right: 2px
+}
+
+.select2-container--classic .select2-selection--multiple .select2-selection__choice__remove:hover {
+	color: #555
+}
+
+.select2-container--classic[dir=rtl] .select2-selection--multiple .select2-selection__choice {
+	float: right;
+	margin-left: 5px;
+	margin-right: auto
+}
+
+.select2-container--classic[dir=rtl] .select2-selection--multiple .select2-selection__choice__remove {
+	margin-left: 2px;
+	margin-right: auto
+}
+
+.select2-container--classic.select2-container--open .select2-selection--multiple {
+	border: 1px solid #5897fb
+}
+
+.select2-container--classic.select2-container--open.select2-container--above .select2-selection--multiple {
+	border-top: none;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0
+}
+
+.select2-container--classic.select2-container--open.select2-container--below .select2-selection--multiple {
+	border-bottom: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0
+}
+
+.select2-container--classic .select2-search--dropdown .select2-search__field {
+	border: 1px solid #aaa;
+	outline: 0
+}
+
+.select2-container--classic .select2-search--inline .select2-search__field {
+	outline: 0
+}
+
+.select2-container--classic .select2-dropdown {
+	background-color: #fff;
+	border: 1px solid transparent
+}
+
+.select2-container--classic .select2-dropdown--above {
+	border-bottom: none
+}
+
+.select2-container--classic .select2-dropdown--below {
+	border-top: none
+}
+
+.select2-container--classic .select2-results>.select2-results__options {
+	max-height: 200px;
+	overflow-y: auto
+}
+
+.select2-container--classic .select2-results__option[role=group] {
+	padding: 0
+}
+
+.select2-container--classic .select2-results__option[aria-disabled=true] {
+	color: grey
+}
+
+.select2-container--classic .select2-results__option--highlighted[aria-selected] {
+	background-color: #3875d7;
+	color: #fff
+}
+
+.select2-container--classic .select2-results__group {
+	cursor: default;
+	display: block;
+	padding: 6px
+}
+
+.select2-container--classic.select2-container--open .select2-dropdown {
+	border-color: #5897fb
+}
+
+.landing-wrapper .gh-main .container,.landing-wrapper .gh-mini .container {
+	margin: 0 auto
+}
+
+.landing-wrapper .gh-mini .container .gh-search {
+	margin-right: 246px
+}
+
+.gp-index {
+	position: relative
+}
+
+.gp-index a {
+	text-decoration: none
+}
+
+.gp-index .focus-inner {
+	position: relative;
+	background: url(../images/index-banner.jpg?v=2017_04_28) center center no-repeat #d2e5f6
+}
+
+.gp-index .focus-container {
+	height: 350px
+}
+
+.gp-index .focus-container .focus-pannel {
+	position: absolute;
+	width: 100%;
+	height: 350px;
+	display: none
+}
+
+.gp-index .focus-container .focus-pannel .banner-container {
+	position: relative;
+	width: 1010px;
+	height: 350px;
+	padding-left: 190px;
+	overflow: hidden;
+	margin: auto;
+	z-index: 1
+}
+
+.gp-index .focus-container .focus-pannel .banner-container .text-banner {
+	position: absolute;
+	left: 210px;
+	top: 0;
+	width: 405px;
+	height: 350px;
+	z-index: 1
+}
+
+.gp-index .pagers {
+	position: absolute;
+	z-index: 5;
+	left: 50%;
+	bottom: 15px
+}
+
+.gp-index .pagers a {
+	background: url(../images/hp2.png?_=20140624) -122px -59px no-repeat;
+	height: 11px;
+	width: 11px;
+	text-indent: -999px;
+	overflow: hidden;
+	display: inline-block;
+	float: left;
+	margin: 0 4px
+}
+
+.gp-index .pagers a.on,.gp-index .pagers a:hover {
+	background-position: -86px -59px
+}
+
+.gp-index .side-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 350px;
+	overflow: hidden
+}
+
+.gp-index .side-container .side-inner {
+	position: relative;
+	width: 1200px;
+	margin: auto;
+	height: 350px
+}
+
+.gp-index .side-container .side-inner .side-banner {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 210px;
+	height: 480px;
+	z-index: 5
+}
+
+.gp-index .side-container .side-inner .side-banner img {
+	vertical-align: top
+}
+
+.gp-index .side-container .side-inner .side-banner .banner-separator {
+	display: block;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+	border-top: 1px dotted #eee
+}
+
+.gp-index .news-container {
+	height: 94px;
+	margin-left: 190px;
+	overflow: hidden;
+	border-bottom: 1px solid #f5f5f5
+}
+
+.gp-index .news-container .health-news {
+	float: left
+}
+
+.gp-index .news-container .health-news ul {
+	padding: 18px 0
+}
+
+.gp-index .news-container .health-news ul li {
+	float: left;
+	margin-left: 25px
+}
+
+.gp-index .news-container .health-news ul li img {
+	float: left;
+	border: 1px solid #f5f5f5
+}
+
+.gp-index .news-container .health-news ul li p {
+	width: 205px;
+	margin-left: 100px
+}
+
+.gp-index .news-container .health-news ul li p a {
+	color: #000
+}
+
+.gp-index .news-container .health-news ul li p a:hover {
+	color: #377bee
+}
+
+.gp-index .news-container .health-news ul li p .title {
+	display: block
+}
+
+.gp-index .news-container .health-news ul li p .title .answer-detail {
+	color: #888;
+	font-size: 12px
+}
+
+.gp-index .news-container .health-news ul li p .summary {
+	display: block;
+	margin-top: 5px;
+	color: #888
+}
+
+.gp-index .news-container .health-news ul li p .summary a {
+	color: #888
+}
+
+.gp-index .news-container .health-news ul li p .summary a:hover {
+	color: #377bee
+}
+
+.gp-index .news-container .focus-news {
+	float: left;
+	padding: 18px 0
+}
+
+.gp-index .news-container .focus-news h5 {
+	float: left;
+	position: relative;
+	width: 37px;
+	padding: 3px 10px 0;
+	margin-left: 35px;
+	font-size: 16px;
+	border-right: 1px solid #e4e4e4
+}
+
+.gp-index .news-container .focus-news h5 .ao {
+	position: absolute;
+	top: 21px;
+	right: -16px;
+	width: 0;
+	height: 0;
+	border: 8px solid transparent;
+	border-left-color: #e4e4e4
+}
+
+.gp-index .news-container .focus-news h5 .ai {
+	position: absolute;
+	top: 21px;
+	right: -15px;
+	width: 0;
+	height: 0;
+	border: 8px solid transparent;
+	border-left-color: #fff
+}
+
+.gp-index .news-container .focus-news h5 a {
+	color: #333
+}
+
+.gp-index .news-container .focus-news h5 .news-img {
+	padding-left: 9px
+}
+
+.gp-index .news-container .focus-news ul {
+	float: left;
+	padding-left: 20px
+}
+
+.gp-index .news-container .focus-news ul a {
+	position: relative;
+	color: #888
+}
+
+.gp-index .news-container .focus-news ul a:hover {
+	color: #377bee
+}
+
+.gp-index .news-container .focus-news ul li {
+	line-height: 18px
+}
+
+.gp-index .news-container .focus-news ul li .hot {
+	background: url(../images/homepage-sp.png?_=20170508) -14px -354px no-repeat;
+	width: 29px;
+	height: 17px;
+	position: absolute;
+	right: -35px;
+	top: -3px
+}
+
+.gp-index .landing-section {
+	margin-top: 27px
+}
+
+.gp-index .landing-section .title-bar {
+	position: relative;
+	margin-bottom: 15px
+}
+
+.gp-index .landing-section .title-bar h2 {
+	display: inline-block;
+	font-size: 24px
+}
+
+.gp-index .landing-section .title-bar .slogan {
+	display: inline-block;
+	margin-left: 10px;
+	font-size: 14px;
+	color: #bcbcbc
+}
+
+.gp-index .landing-section .new {
+	position: absolute;
+	bottom: 10px;
+	left: 85px
+}
+
+.gp-index .landing-section .new-jiahao {
+	position: relative;
+	left: -13px;
+	bottom: 8px;
+	margin-bottom: -9px
+}
+
+.gp-index .landing-section .loading {
+	height: 100%;
+	background: url(../images/loading-big.gif) center center no-repeat
+}
+
+.gp-index .booking-section .main-ctn {
+	position: relative;
+	height: 310px
+}
+
+.gp-index .booking-section .g-grid-left {
+	position: relative;
+	width: 886px;
+	border: 1px solid #e4e4e4
+}
+
+.gp-index .booking-section .hospital-rank {
+	position: absolute;
+	top: -30px;
+	right: 0;
+	border: 1px solid #dff2ff;
+	padding: 2px 5px 3px 3px
+}
+
+.gp-index .booking-section .hospital-rank a {
+	color: #5ca945
+}
+
+.gp-index .booking-section .hospital-rank i {
+	position: relative;
+	top: 2px;
+	display: inline-block;
+	width: 17px;
+	height: 15px;
+	background: url(../images/hospital-ranking.png) center center no-repeat;
+	margin: 0 5px
+}
+
+.gp-index .booking-section .fast-order {
+	float: left;
+	width: 230px;
+	height: 270px;
+	padding: 20px;
+	border-right: 1px solid #e4e4e4;
+	background: url(../images/fast-order.png?20151208) center 92% no-repeat
+}
+
+.gp-index .booking-section .fast-order .title {
+	position: relative;
+	margin-bottom: 30px
+}
+
+.gp-index .booking-section .fast-order .title .addr {
+	padding-left: 30px;
+	position: relative;
+	font-size: 18px
+}
+
+.gp-index .booking-section .fast-order .title .addr-icon {
+	position: absolute;
+	left: 0;
+	top: -4px;
+	width: 20px;
+	height: 22px;
+	margin-right: 10px;
+	display: inline-block;
+	zoom: 1;
+	overflow: hidden;
+	background: url(../images/search-addr.png) 0 -8px no-repeat
+}
+
+.gp-index .booking-section .fast-order .title .province {
+	display: inline-block;
+	margin-left: 25px;
+	font-size: 16px
+}
+
+.gp-index .booking-section .fast-order .title .city {
+	display: inline-block;
+	margin-left: 5px;
+	font-size: 16px
+}
+
+.gp-index .booking-section .fast-order .title .switch {
+	position: relative;
+	display: inline-block;
+	margin-left: 27px;
+	color: #888
+}
+
+.gp-index .booking-section .fast-order .title .switch .arrow-down {
+	position: absolute;
+	top: 7px;
+	right: -15px;
+	width: 0;
+	height: 0;
+	border: 4px solid transparent;
+	border-top-color: #bcbcbc
+}
+
+.gp-index .booking-section .fast-order .main {
+	text-align: center
+}
+
+.gp-index .booking-section .fast-order .main .text {
+	width: 216px;
+	margin-bottom: 20px
+}
+
+.gp-index .booking-section .fast-order .main .gbn {
+	padding: 3px 30px;
+	margin-top: 15px
+}
+
+.gp-index .booking-section .fast-order .select2 {
+	margin-bottom: 15px
+}
+
+.gp-index .booking-section .fast-order .select2-container .select2-search--inline .select2-search__field {
+	font-size: 14px;
+	margin-top: 6px;
+	-webkit-appearance: none
+}
+
+.gp-index .booking-section .fast-order .select2-container .select2-search--inline .select2-search__field::-webkit-input-placeholder {
+	-webkit-text-fill-color: #D3D0CB
+}
+
+.gp-index .booking-section .fast-order .select2-container--default .select2-selection--multiple {
+	min-height: 36px;
+	border-color: #DBD7D3;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0
+}
+
+.gp-index .booking-section .fast-order .select2-container--default .select2-selection--multiple .select2-selection__choice {
+	position: relative;
+	max-width: 180px;
+	border: none;
+	background-color: #f9f9f9;
+	padding: 5px 15px 5px 5px;
+	overflow: hidden;
+	white-space: nowrap;
+	-o-text-overflow: ellipsis;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis
+}
+
+.gp-index .booking-section .fast-order .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+	position: absolute;
+	display: block;
+	width: 16px;
+	height: 16px;
+	right: 1px;
+	top: 5px;
+	margin-right: 0
+}
+
+.gp-index .booking-section .fast-order .select2-container--default.select2-container--disabled .select2-selection--multiple {
+	background-color: #F9F9F9
+}
+
+.gp-index .booking-section .fast-order .select2-container--default.select2-container--focus .select2-selection--multiple {
+	border-color: #bcbcbc
+}
+
+.gp-index .booking-section .addr-wrap {
+	font-size: 12px;
+	position: absolute;
+	width: 395px;
+	background-color: #fff;
+	display: none;
+	top: 54px;
+	left: 127px;
+	padding: 15px 0 12px 20px;
+	border: 1px solid #bdd0e8
+}
+
+.gp-index .booking-section .addr-wrap .stick {
+	position: absolute;
+	left: -1px;
+	top: -40px;
+	width: 80px;
+	height: 39px;
+	border: 1px solid #bdd0e8;
+	border-bottom: none;
+	background-color: #fff
+}
+
+.gp-index .booking-section .addr-wrap .stick .switch {
+	position: relative;
+	display: inline-block;
+	margin-top: 5px;
+	margin-left: 20px
+}
+
+.gp-index .booking-section .addr-wrap .stick .switch .arrow-down {
+	position: absolute;
+	top: 3px;
+	right: -15px;
+	width: 0;
+	height: 0;
+	border: 4px solid transparent;
+	border-bottom-color: #377bee
+}
+
+.gp-index .booking-section .addr-wrap .close {
+	position: absolute;
+	right: 4px;
+	top: 10px;
+	background: url(../images/search-addr.png) 0 -48px no-repeat;
+	width: 18px;
+	height: 18px
+}
+
+.gp-index .booking-section .addr-wrap .on {
+	color: #377bee!important;
+	text-decoration: none
+}
+
+.gp-index .booking-section .addr-wrap .hot-city {
+	border-bottom: 1px solid #f5f5f5;
+	margin-right: 20px
+}
+
+.gp-index .booking-section .addr-wrap .hot-city label {
+	width: 40px;
+	float: left;
+	padding: 2px 0;
+	color: #f9a821
+}
+
+.gp-index .booking-section .addr-wrap .hot-city ul {
+	overflow: hidden
+}
+
+.gp-index .booking-section .addr-wrap .hot-city ul li {
+	float: left;
+	width: 50px
+}
+
+.gp-index .booking-section .addr-wrap .hot-city ul li a {
+	text-decoration: none;
+	color: #000;
+	display: block;
+	padding: 2px 3px;
+	margin-right: 6px
+}
+
+.gp-index .booking-section .addr-wrap .hot-city ul li a:hover {
+	color: #377bee;
+	background: #e1eff9;
+	text-decoration: none
+}
+
+.gp-index .booking-section .addr-wrap .area-content .content-title {
+	margin: 8px 0 4px
+}
+
+.gp-index .booking-section .addr-wrap .area-content ul {
+	line-height: 20px
+}
+
+.gp-index .booking-section .addr-wrap .area-content ul li {
+	float: left;
+	width: 64px;
+	margin-bottom: 3px
+}
+
+.gp-index .booking-section .addr-wrap .area-content ul li a {
+	text-decoration: none;
+	color: #000;
+	display: block;
+	padding-left: 3px;
+	margin-right: 6px;
+	width: 55px;
+	height: 20px;
+	overflow: hidden;
+	white-space: nowrap;
+	-o-text-overflow: ellipsis;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis
+}
+
+.gp-index .booking-section .addr-wrap .area-content ul li a:hover {
+	color: #377bee;
+	text-decoration: none
+}
+
+.gp-index .booking-section .addr-wrap .area-content .city {
+	display: none
+}
+
+.gp-index .booking-section .addr-wrap .area-content .city .content-title {
+	position: relative
+}
+
+.gp-index .booking-section .addr-wrap .area-content .city .content-title span {
+	margin-left: 10px
+}
+
+.gp-index .booking-section .addr-wrap .area-content .city .content-title .back {
+	cursor: pointer;
+	color: #377bee;
+	position: absolute;
+	top: 0;
+	right: 20px
+}
+
+.gp-index .booking-section .recom-hospital {
+	float: left;
+	width: 575px;
+	height: 270px;
+	padding: 20px;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	top: 0
+}
+
+.gp-index .booking-section .recom-hospital .tabs {
+	position: relative;
+	border-bottom: 1px solid #e4e4e4;
+	font-size: 14px
+}
+
+.gp-index .booking-section .recom-hospital .tabs .tip {
+	position: absolute;
+	display: block;
+	font-size: 18px;
+	padding: 8px 10px 8px 0
+}
+
+.gp-index .booking-section .recom-hospital .tabs ul {
+	margin-left: 90px
+}
+
+.gp-index .booking-section .recom-hospital .tabs li {
+	float: left;
+	display: inline;
+	height: 34px;
+	position: relative;
+	z-index: 2
+}
+
+.gp-index .booking-section .recom-hospital .tabs li a {
+	float: left;
+	height: 34px;
+	padding: 0 13px;
+	text-decoration: none;
+	line-height: 34px;
+	overflow: hidden;
+	background: #fff;
+	border-left: solid 1px #fff;
+	border-right: solid 1px #fff;
+	white-space: nowrap;
+	color: #333
+}
+
+.gp-index .booking-section .recom-hospital .tabs li span {
+	position: absolute;
+	width: 1px;
+	background: #ccc;
+	overflow: hidden;
+	height: 14px;
+	top: 10px;
+	right: 0
+}
+
+.gp-index .booking-section .recom-hospital .tabs li.on a {
+	position: absolute;
+	white-space: nowrap;
+	border-left: solid 1px #e4e4e4;
+	border-right: solid 1px #e4e4e4;
+	border-top: solid 1px #e4e4e4;
+	top: 1px;
+	left: -1px;
+	height: 33px;
+	line-height: 30px;
+	color: #377bee;
+	text-indent: 1px
+}
+
+.gp-index .booking-section .recom-hospital .tabs li.last span,.gp-index .booking-section .recom-hospital .tabs li.on span {
+	display: none
+}
+
+.gp-index .booking-section .recom-hospital .content-container {
+	height: 240px;
+	overflow: hidden
+}
+
+.gp-index .booking-section .recom-hospital .focus-list {
+	padding-top: 25px;
+	margin-left: -25px;
+	padding-bottom: 15px;
+	border-bottom: 1px dotted #e4e4e4
+}
+
+.gp-index .booking-section .recom-hospital .focus-list li {
+	float: left;
+	margin-left: 25px
+}
+
+.gp-index .booking-section .recom-hospital .focus-list li img {
+	float: left
+}
+
+.gp-index .booking-section .recom-hospital .focus-list li p {
+	width: 160px;
+	margin-left: 115px
+}
+
+.gp-index .booking-section .recom-hospital .focus-list li p .title {
+	display: block;
+	font-size: 14px
+}
+
+.gp-index .booking-section .recom-hospital .focus-list li p .level {
+	display: block;
+	margin-top: 5px;
+	color: #888
+}
+
+.gp-index .booking-section .recom-hospital .focus-list li p .score {
+	position: relative;
+	display: block;
+	padding: 3px 0
+}
+
+.gp-index .booking-section .recom-hospital .focus-list li p .score .count {
+	position: absolute;
+	top: 5px;
+	display: inline-block;
+	color: #f9a821;
+	font-size: 14px;
+	margin-left: 5px
+}
+
+.gp-index .booking-section .recom-hospital .focus-list li p .phone {
+	display: block;
+	color: #888;
+	overflow: hidden;
+	white-space: nowrap;
+	-o-text-overflow: ellipsis;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis
+}
+
+.gp-index .booking-section .recom-hospital .focus-list li.right {
+	margin-left: 30px
+}
+
+.gp-index .booking-section .recom-hospital .normal-list {
+	padding-top: 10px;
+	margin-left: -55px
+}
+
+.gp-index .booking-section .recom-hospital .normal-list li {
+	float: left;
+	line-height: 20px;
+	padding: 3px 0;
+	width: 250px;
+	font-size: 14px;
+	margin-left: 55px;
+	overflow: hidden;
+	white-space: nowrap;
+	-o-text-overflow: ellipsis;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis
+}
+
+.gp-index .booking-section .recom-hospital .normal-list li a {
+	color: #333
+}
+
+.gp-index .booking-section .recom-hospital .normal-list li .g-more,.gp-index .booking-section .recom-hospital .normal-list li a:hover {
+	color: #377bee
+}
+
+.gp-index .booking-section .g-grid-right {
+	top: -36px;
+	border: 1px solid #e4e4e4;
+	margin-left: 20px;
+	width: 290px;
+	height: 346px;
+	position: absolute;
+	right: 0
+}
+
+.gp-index .booking-section .gd-list {
+	padding: 20px 0
+}
+
+.gp-index .booking-section .gd-list .cover-bg {
+	display: block;
+	background: url(../images/blank.gif);
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 2
+}
+
+.gp-index .booking-section .gd-list h3 {
+	padding: 0 20px 10px;
+	border-bottom: 1px solid #e4e4e4;
+	height: 18px;
+	line-height: 18px;
+	margin-top: 4px;
+	background: url(../images/mingyi-txt.png) 20px 0 no-repeat
+}
+
+.gp-index .booking-section .gd-list h3 .more {
+	float: right;
+	display: inline-block;
+	height: 8px;
+	line-height: 8px;
+	margin-top: 10px;
+	margin-left: 10px;
+	padding-left: 8px;
+	font-size: 11px;
+	border-left: 1px solid #888
+}
+
+.gp-index .booking-section .gd-list ul li {
+	position: relative;
+	width: 100%;
+	height: 147px
+}
+
+.gp-index .booking-section .gd-list ul li .teaminfo {
+	padding: 15px 20px 0;
+	overflow: hidden
+}
+
+.gp-index .booking-section .gd-list ul li .teaminfo a {
+	color: #000
+}
+
+.gp-index .booking-section .gd-list ul li .teaminfo.hover,.gp-index .booking-section .gd-list ul li .teaminfo:hover {
+	background-color: #f9f9f9
+}
+
+.gp-index .booking-section .gd-list ul li .teaminfo dl {
+	width: 100%;
+	height: 70px
+}
+
+.gp-index .booking-section .gd-list ul li .teaminfo dl dt {
+	float: left;
+	position: relative;
+	width: 70px;
+	height: 70px;
+	margin-right: 15px
+}
+
+.gp-index .booking-section .gd-list ul li .teaminfo dl dt img {
+	width: 100%;
+	height: 100%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%
+}
+
+.gp-index .booking-section .gd-list ul li .teaminfo dl dd {
+	float: left;
+	width: 160px;
+	height: 100%
+}
+
+.gp-index .booking-section .gd-list ul li .teaminfo dl dd a {
+	display: inline-block;
+	margin-bottom: 7px
+}
+
+.gp-index .booking-section .gd-list ul li .teaminfo dl dd a.doc {
+	font-size: 14px
+}
+
+.gp-index .booking-section .gd-list ul li .teaminfo dl dd a.dept {
+	font-size: 12px;
+	margin-left: 10px;
+	color: #888
+}
+
+.gp-index .booking-section .gd-list ul li .teaminfo dl dd a.hos {
+	width: 100%;
+	height: 14px;
+	overflow: hidden;
+	white-space: nowrap;
+	-o-text-overflow: ellipsis;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis
+}
+
+.gp-index .booking-section .gd-list ul li .teaminfo dl dd a.bookbtn {
+	display: block;
+	width: 66px;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	color: #fff;
+	background-color: #377bee;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px
+}
+
+.gp-index .booking-section .gd-list ul li .teaminfo .claim {
+	display: inline-block;
+	padding: 10px 0 15px;
+	line-height: 18px;
+	border-bottom: 1px dotted #e4e4e4;
+	width: 100%
+}
+
+.gp-index .booking-section .gd-list ul li .teaminfo .claim span {
+	font-weight: 400;
+	color: #888
+}
+
+.gp-index .booking-section .gd-list ul li .expert-team {
+	position: absolute;
+	display: block;
+	top: 25px;
+	right: -5px;
+	width: 30px;
+	height: 30px;
+	background-color: #f9a821;
+	color: #fff;
+	text-align: center;
+	z-index: 999
+}
+
+.gp-index .booking-section .gd-list ul li .expert-team .name {
+	display: block;
+	margin: 3px auto 0;
+	color: #fff;
+	font-size: 11px;
+	line-height: 12px
+}
+
+.gp-index .booking-section .gd-list ul li .expert-team .arrow {
+	position: absolute;
+	top: -5px;
+	right: 0;
+	width: 0;
+	height: 0;
+	border-bottom: 5px solid #e4e4e4;
+	border-right: 5px solid transparent
+}
+
+.gp-index .booking-section .gd-list ul li:last-child .claim {
+	border: 0
+}
+
+.gp-index .consult-section {
+	height: 780px
+}
+
+.gp-index .consult-section .consult-bar {
+	padding: 20px;
+	background-color: #F9FAFC;
+	border-bottom: 2px solid #74b334;
+	-webkit-box-shadow: 0 3px 3px rgba(0,0,0,.1);
+	-moz-box-shadow: 0 3px 3px rgba(0,0,0,.1);
+	box-shadow: 0 3px 3px rgba(0,0,0,.1)
+}
+
+.gp-index .consult-section .consult-bar .consult-fm {
+	overflow: hidden;
+	position: relative;
+	border: 1px solid #77c001;
+	border-radius: 3px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px
+}
+
+.gp-index .consult-section .consult-bar .consult-input {
+	width: 723px;
+	padding: 5px 5px 5px 15px;
+	height: 29px;
+	line-height: 29px;
+	font-size: 14px;
+	border: none
+}
+
+.gp-index .consult-section .consult-bar .consult-txt {
+	position: absolute;
+	left: -25px;
+	top: -1px;
+	width: 770px;
+	cursor: text
+}
+
+.gp-index .consult-section .consult-bar .consult-txt img {
+	vertical-align: middle
+}
+
+.gp-index .consult-section .consult-bar .consult-btn {
+	float: right;
+	background-color: #77c001;
+	border: none;
+	width: 120px;
+	height: 40px;
+	color: #fff;
+	text-align: center;
+	font-size: 14px;
+	cursor: pointer
+}
+
+.gp-index .consult-section .consult-type {
+	background-color: #F9FAFC;
+	border-bottom: 2px solid #74b334;
+	-webkit-box-shadow: 0 3px 3px rgba(0,0,0,.1);
+	-moz-box-shadow: 0 3px 3px rgba(0,0,0,.1);
+	box-shadow: 0 3px 3px rgba(0,0,0,.1)
+}
+
+.gp-index .consult-section .consult-type a {
+	text-decoration: none;
+	color: #333
+}
+
+.gp-index .consult-section .consult-type a:hover {
+	color: #5ca945
+}
+
+.gp-index .consult-section .consult-type ul {
+	padding: 0 20px
+}
+
+.gp-index .consult-section .consult-type ul li {
+	float: left;
+	width: 290px;
+	padding: 15px 0
+}
+
+.gp-index .consult-section .consult-type ul li .icon {
+	float: left;
+	display: block;
+	width: 40px;
+	height: 40px
+}
+
+.gp-index .consult-section .consult-type ul li .free {
+	background: url(../images/consult_free.png) no-repeat
+}
+
+.gp-index .consult-section .consult-type ul li .image {
+	background-image: url(../images/home/home-sprite.png);
+	background-repeat: no-repeat;
+	background-position: -5px -235px;
+	width: 39px;
+	height: 38px
+}
+
+.gp-index .consult-section .consult-type ul li .phone {
+	background: url(../images/tel-new.png);
+	width: 40px;
+	height: 39px
+}
+
+.gp-index .consult-section .consult-type ul li .video {
+	background-image: url(../images/home-sprite.png);
+	background-repeat: no-repeat;
+	background-position: -5px -331px;
+	width: 40px;
+	height: 38px
+}
+
+.gp-index .consult-section .consult-type ul li p {
+	margin-left: 50px
+}
+
+.gp-index .consult-section .consult-type ul li p i {
+	display: inline-block;
+	margin-left: 5px;
+	background-image: url(../images/home-sprite.png);
+	background-repeat: no-repeat;
+	background-position: -5px -191px;
+	width: 12px;
+	height: 12px
+}
+
+.gp-index .consult-section .consult-type ul li p .title {
+	display: block;
+	font-size: 16px
+}
+
+.gp-index .consult-section .consult-type ul li p .desc {
+	display: block;
+	margin-top: 5px;
+	color: #888
+}
+
+.gp-index .consult-section .consult-type ul li.today-free {
+	padding: 15px 0;
+	width: auto
+}
+
+.gp-index .consult-section .consult-type ul li.today-free a {
+	display: block;
+	position: relative;
+	border-left: 1px solid #e4e4e4;
+	height: 40px;
+	padding-left: 20px;
+	font-size: 14px;
+	color: #377bee
+}
+
+.gp-index .consult-section .consult-type ul li.today-free span {
+	display: inline-block;
+	margin-top: 3px
+}
+
+.gp-index .consult-section .consult-type ul li.today-free i {
+	position: absolute;
+	top: 24px;
+	left: 40px;
+	background-image: url(../images/home-sprite.png);
+	background-repeat: no-repeat;
+	background-position: -5px -213px;
+	width: 12px;
+	height: 12px
+}
+
+.gp-index .consult-section .consult-list {
+	padding: 15px 20px 20px;
+	border-left: 1px solid #e4e4e4;
+	border-bottom: 1px solid #e4e4e4;
+	height: 626px;
+	height: 627px\9;
+	overflow: hidden
+}
+
+.gp-index .consult-section .consult-list .tabs {
+	position: relative;
+	border-bottom: 1px solid #e4e4e4;
+	font-size: 14px
+}
+
+.gp-index .consult-section .consult-list .tabs .tip {
+	position: absolute;
+	display: block;
+	font-size: 18px;
+	padding: 8px 10px 8px 0
+}
+
+.gp-index .consult-section .consult-list .tabs ul {
+	margin-left: 10px
+}
+
+.gp-index .consult-section .consult-list .tabs li {
+	float: left;
+	display: inline;
+	height: 34px;
+	position: relative;
+	z-index: 2
+}
+
+.gp-index .consult-section .consult-list .tabs li a {
+	float: left;
+	height: 34px;
+	padding: 0 16px;
+	text-decoration: none;
+	line-height: 34px;
+	overflow: hidden;
+	background: #fff;
+	border-left: solid 1px #fff;
+	border-right: solid 1px #fff;
+	white-space: nowrap;
+	color: #333
+}
+
+.gp-index .consult-section .consult-list .tabs li span {
+	position: absolute;
+	width: 1px;
+	background: #ccc;
+	overflow: hidden;
+	height: 14px;
+	top: 10px;
+	right: 0
+}
+
+.gp-index .consult-section .consult-list .tabs li.on a {
+	position: absolute;
+	white-space: nowrap;
+	border-left: solid 1px #e4e4e4;
+	border-right: solid 1px #e4e4e4;
+	border-top: solid 1px #e4e4e4;
+	top: 1px;
+	left: -1px;
+	height: 33px;
+	line-height: 30px;
+	color: #377bee;
+	text-indent: 1px
+}
+
+.gp-index .consult-section .consult-list .tabs li.last span,.gp-index .consult-section .consult-list .tabs li.on span {
+	display: none
+}
+
+.gp-index .consult-section .consult-list .content-container {
+	overflow: hidden;
+	height: 596px
+}
+
+.gp-index .consult-section .consult-list .content-container .bx-viewport {
+	overflow: inherit!important
+}
+
+.gp-index .consult-section .consult-list .dept-consult {
+	padding-top: 30px
+}
+
+.gp-index .consult-section .consult-list .dept-consult .doctor-show {
+	position: relative
+}
+
+.gp-index .consult-section .consult-list .dept-consult .doctor-show .more {
+	position: absolute;
+	top: -23px;
+	right: 0
+}
+
+.gp-index .consult-section .consult-list .dept-consult .doctor-show .more i {
+	display: block;
+	float: left;
+	width: 1px;
+	height: 8px;
+	margin: 5px 10px 0 0;
+	background-color: #888
+}
+
+.gp-index .consult-section .consult-list .dept-consult .doctor-show ul li {
+	float: left;
+	width: 200px;
+	text-align: center;
+	color: #888
+}
+
+.gp-index .consult-section .consult-list .dept-consult .doctor-show ul li .inner {
+	border: 1px solid #e4e4e4
+}
+
+.gp-index .consult-section .consult-list .dept-consult .doctor-show ul li .inner:hover {
+	border-bottom: 1px solid #69adff;
+	-webkit-box-shadow: 0 -3px 5px rgba(0,0,0,.1);
+	-moz-box-shadow: 0 -3px 5px rgba(0,0,0,.1);
+	box-shadow: 0 -3px 5px rgba(0,0,0,.1)
+}
+
+.gp-index .consult-section .consult-list .dept-consult .doctor-show .portrait {
+	display: inline-block;
+	margin-top: 20px
+}
+
+.gp-index .consult-section .consult-list .dept-consult .doctor-show .portrait img {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	border: 1px solid #E5F2FE;
+	padding: 5px
+}
+
+.gp-index .consult-section .consult-list .dept-consult .doctor-show .portrait .opened {
+	width: 19px;
+	height: 19px;
+	position: absolute;
+	background: url(../images/opened.png);
+	left: 115px;
+	top: 77px
+}
+
+.gp-index .consult-section .consult-list .dept-consult .doctor-show .name {
+	display: block;
+	font-size: 14px;
+	margin-top: 15px;
+	color: #333
+}
+
+.gp-index .consult-section .consult-list .dept-consult .doctor-show .name a {
+	color: #333
+}
+
+.gp-index .consult-section .consult-list .dept-consult .doctor-show .name a:hover {
+	color: #377bee
+}
+
+.gp-index .consult-section .consult-list .dept-consult .doctor-show .name i {
+	display: inline-block;
+	font-style: normal;
+	margin-left: 5px
+}
+
+.gp-index .consult-section .consult-list .dept-consult .doctor-show .hospital {
+	display: block;
+	margin-top: 10px;
+	font-size: 12px
+}
+
+.gp-index .consult-section .consult-list .dept-consult .doctor-show .hospital a {
+	color: #888
+}
+
+.gp-index .consult-section .consult-list .dept-consult .doctor-show .consult {
+	position: relative;
+	display: block;
+	margin-top: 10px
+}
+
+.gp-index .consult-section .consult-list .dept-consult .doctor-show .consult em {
+	display: inline-block;
+	font-style: normal;
+	font-weight: 700;
+	color: #f9a821
+}
+
+.gp-index .consult-section .consult-list .dept-consult .doctor-show .consult .no-count {
+	display: inline-block;
+	color: #bcbcbc
+}
+
+.gp-index .consult-section .consult-list .dept-consult .doctor-show .good {
+	text-align: left;
+	margin: 15px 10px 10px;
+	padding-top: 10px;
+	border-top: 1px dotted #e4e4e4;
+	height: 30px;
+	overflow: hidden
+}
+
+.gp-index .consult-section .consult-list .dept-consult .doctor-show .action {
+	text-align: center;
+	background-color: #FDFDFD;
+	border-top: 1px solid #f5f5f5
+}
+
+.gp-index .consult-section .consult-list .dept-consult .doctor-show .action span {
+	display: block;
+	float: left;
+	height: 32px;
+	line-height: 32px;
+	text-indent: -9999px
+}
+
+.gp-index .consult-section .consult-list .dept-consult .doctor-show .action i {
+	display: block;
+	margin-left: 23px;
+	margin-top: 9px
+}
+
+.gp-index .consult-section .consult-list .dept-consult .doctor-show .action .img {
+	width: 66px;
+	border-right: 1px solid #f5f5f5
+}
+
+.gp-index .consult-section .consult-list .dept-consult .doctor-show .action .img .enable {
+	background-image: url(../images/home-sprite.png);
+	background-repeat: no-repeat;
+	background-position: -5px -403px;
+	width: 19px;
+	height: 14px
+}
+
+.gp-index .consult-section .consult-list .dept-consult .doctor-show .action .img .disable {
+	background-image: url(../images/home-sprite.png);
+	background-repeat: no-repeat;
+	background-position: -5px -379px;
+	width: 19px;
+	height: 14px
+}
+
+.gp-index .consult-section .consult-list .dept-consult .doctor-show .action .phone {
+	width: 65px;
+	border-right: 1px solid #f5f5f5
+}
+
+.gp-index .consult-section .consult-list .dept-consult .doctor-show .action .phone i {
+	margin-top: 7px;
+	width: 17px;
+	height: 17px
+}
+
+.gp-index .consult-section .consult-list .dept-consult .doctor-show .action .phone .enable {
+	background: url(../images/tel-main.png) right no-repeat
+}
+
+.gp-index .consult-section .consult-list .dept-consult .doctor-show .action .phone .disable {
+	background: url(../images/tel-main.png) no-repeat
+}
+
+.gp-index .consult-section .consult-list .dept-consult .doctor-show .action .video {
+	width: 65px
+}
+
+.gp-index .consult-section .consult-list .dept-consult .doctor-show .action .video .enable {
+	background-image: url(../images/home-sprite.png);
+	background-repeat: no-repeat;
+	background-position: -5px -508px;
+	width: 14px;
+	height: 17px
+}
+
+.gp-index .consult-section .consult-list .dept-consult .doctor-show .action .video .disable {
+	background-image: url(../images/home-sprite.png);
+	background-repeat: no-repeat;
+	background-position: -5px -481px;
+	width: 14px;
+	height: 17px
+}
+
+.gp-index .consult-section .consult-list .dept-consult .consult-show {
+	margin-top: 30px;
+	border-top: 1px dotted #ccc
+}
+
+.gp-index .consult-section .consult-list .dept-consult .consult-show ul li {
+	padding: 12px 0;
+	border-bottom: 1px dotted #ccc
+}
+
+.gp-index .consult-section .consult-list .dept-consult .consult-show ul li.last,.gp-index .consult-section .consult-list .dept-consult .consult-show ul li:last-child {
+	border-bottom: none
+}
+
+.gp-index .consult-section .consult-list .dept-consult .consult-show ul li .pre-icon {
+	display: block;
+	float: left;
+	width: 30px;
+	height: 30px;
+	margin-top: -5px;
+	line-height: 30px;
+	text-indent: -9999px
+}
+
+.gp-index .consult-section .consult-list .dept-consult .consult-show .ask .pre-icon {
+	background-image: url(../images/home-sprite.png);
+	background-repeat: no-repeat;
+	background-position: -5px -50px;
+	width: 35px;
+	height: 36px
+}
+
+.gp-index .consult-section .consult-list .dept-consult .consult-show .ask .content {
+	display: inline-block;
+	margin-left: 20px;
+	margin-top: 5px;
+	font-size: 14px;
+	width: 650px;
+	overflow: hidden;
+	white-space: nowrap;
+	-o-text-overflow: ellipsis;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis
+}
+
+.gp-index .consult-section .consult-list .dept-consult .consult-show .ask .date {
+	float: right;
+	margin-top: 4px;
+	color: #888
+}
+
+.gp-index .consult-section .consult-list .dept-consult .consult-show .answer {
+	margin-top: 8px;
+	display: none
+}
+
+.gp-index .consult-section .consult-list .dept-consult .consult-show .answer .pre-icon {
+	background-image: url(../images/home-sprite.png);
+	background-repeat: no-repeat;
+	background-position: -5px -5px;
+	width: 35px;
+	height: 35px
+}
+
+.gp-index .consult-section .consult-list .dept-consult .consult-show .answer .inner {
+	position: relative;
+	margin-left: 50px;
+	background-color: #f5f5f5;
+	padding: 10px
+}
+
+.gp-index .consult-section .consult-list .dept-consult .consult-show .answer .inner .arrow {
+	position: absolute;
+	top: 0;
+	left: -10px;
+	width: 0;
+	height: 0;
+	border-top: 10px solid #f5f5f5;
+	border-left: 10px solid transparent
+}
+
+.gp-index .consult-section .consult-list .dept-consult .consult-show .answer .inner .portrait {
+	float: left;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%
+}
+
+.gp-index .consult-section .consult-list .dept-consult .consult-show .answer .inner p {
+	margin-left: 40px
+}
+
+.gp-index .consult-section .consult-list .dept-consult .consult-show .answer .inner p .doc-info {
+	display: block;
+	color: #888
+}
+
+.gp-index .consult-section .consult-list .dept-consult .consult-show .answer .inner p .doc-answer {
+	display: block;
+	margin-top: 3px
+}
+
+.gp-index .consult-section .today-focus {
+	padding: 20px;
+	border: 1px solid #e4e4e4;
+	border-bottom: none;
+	text-align: center
+}
+
+.gp-index .consult-section .today-focus h3 {
+	position: relative;
+	font-size: 24px;
+	color: #525252;
+	padding-bottom: 25px;
+	padding-left: 20px;
+	border-bottom: 1px solid #e4e4e4
+}
+
+.gp-index .consult-section .today-focus h3 i {
+	position: absolute;
+	display: block;
+	top: -5px;
+	left: 35px;
+	background-image: url(../images/home-sprite.png);
+	background-repeat: no-repeat;
+	background-position: -5px -1003px;
+	width: 37px;
+	height: 38px
+}
+
+.gp-index .consult-section .today-focus .main {
+	width: 230px;
+	margin: 0 auto
+}
+
+.gp-index .consult-section .today-focus p {
+	text-align: center
+}
+
+.gp-index .consult-section .today-focus .portrait {
+	height: 135px;
+	margin: 15px 0
+}
+
+.gp-index .consult-section .today-focus .name {
+	display: inline-block;
+	font-size: 16px;
+	color: #333
+}
+
+.gp-index .consult-section .today-focus .name:hover {
+	color: #377bee
+}
+
+.gp-index .consult-section .today-focus .profess {
+	display: inline-block;
+	font-size: 16px;
+	color: #888
+}
+
+.gp-index .consult-section .today-focus .dept,.gp-index .consult-section .today-focus .hospital {
+	display: block;
+	margin-top: 5px;
+	font-size: 12px;
+	color: #888
+}
+
+.gp-index .consult-section .today-focus .light {
+	font-size: 14px;
+	margin-top: 15px
+}
+
+.gp-index .consult-section .today-focus .light span {
+	display: inline-block;
+	padding: 5px 8px;
+	background-color: #FFEDCC;
+	color: #f9a821;
+	border-radius: 3px
+}
+
+.gp-index .consult-section .today-focus .range {
+	height: 65px;
+	text-align: left;
+	line-height: 22px;
+	color: #888;
+	padding-top: 15px;
+	margin-top: 15px;
+	border-top: 1px dotted #e4e4e4;
+	font-size: 14px;
+	overflow: hidden
+}
+
+.gp-index .consult-section .today-focus .range span {
+	color: #333
+}
+
+.gp-index .consult-section .freeconsultation {
+	display: block;
+	position: relative;
+	background: url(../images/ask.png?v=20170505) 0 -25px;
+	width: 290px;
+	height: 359px;
+	padding-top: 75px;
+	border: 1px solid #d3ebe0
+}
+
+.gp-index .consult-section .freeconsultation .gbn {
+	margin: 0 20px;
+	padding: 0 20px;
+	font-size: 16px;
+	height: 55px;
+	line-height: 55px;
+	display: block
+}
+
+.gp-index .consult-section .freeconsultation .gbn::before {
+	content: '';
+	background: url(../images/home/ask.png);
+	width: 34px;
+	height: 25px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+	margin-left: 5px
+}
+
+.gp-index .consult-section .freeconsultation .url-wrap {
+	display: block;
+	position: absolute;
+	top: 25px;
+	left: 90px;
+	width: 110px;
+	height: 30px
+}
+
+.gp-index .consult-section .freeconsultation .ask-type {
+	margin: 57px 0 0 70px
+}
+
+.gp-index .consult-section .freeconsultation .ask-type .title {
+	display: block;
+	margin-bottom: 3px;
+	font-size: 14px;
+	color: #333
+}
+
+.gp-index .consult-section .freeconsultation .ask-type .title i {
+	display: inline-block;
+	margin-left: 5px;
+	background-image: url(../images/home-sprite.png);
+	background-repeat: no-repeat;
+	background-position: -5px -191px;
+	width: 12px;
+	height: 12px
+}
+
+.gp-index .consult-section .freeconsultation .ask-type .title:hover {
+	color: #5ca945
+}
+
+.gp-index .consult-section .freeconsultation .ask-type .desc {
+	display: block;
+	color: #999
+}
+
+.gp-index .consult-section .freeconsultation .ask-type-video {
+	margin-top: 35px
+}
+
+.gp-index .consult-section .volunteer {
+	background: url(../images/volunteer.jpg?v=20170505);
+	width: 290px;
+	height: 310px;
+	display: block
+}
+
+.gp-index .consult-section .consult-help {
+	border: 1px solid #e4e4e4;
+	border-top: none
+}
+
+.gp-index .consult-section .consult-help .title {
+	position: relative;
+	width: 298px;
+	height: 50px;
+	background-color: #61ac46;
+	text-align: center;
+	margin-left: -6px
+}
+
+.gp-index .consult-section .consult-help .title a {
+	display: inline-block;
+	color: #fff;
+	padding: 8px 20px;
+	background-color: #439725;
+	font-size: 16px;
+	border-radius: 15px;
+	margin-top: 10px;
+	text-decoration: none
+}
+
+.gp-index .consult-section .consult-help .title .arrow-left {
+	position: absolute;
+	top: -5px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-bottom: 5px solid #dedbd7;
+	border-left: 5px solid transparent
+}
+
+.gp-index .consult-section .consult-help .title .arrow-right {
+	position: absolute;
+	top: -5px;
+	right: 0;
+	width: 0;
+	height: 0;
+	border-bottom: 5px solid #dedbd7;
+	border-right: 5px solid transparent
+}
+
+.gp-index .consult-section .consult-help .title .icon-right {
+	display: block;
+	float: right;
+	margin-left: 3px;
+	margin-top: 1px;
+	background-image: url(../images/home-sprite.png);
+	background-repeat: no-repeat;
+	background-position: -5px -167px;
+	width: 14px;
+	height: 14px
+}
+
+.gp-index .consult-section .consult-help .premotion {
+	text-align: center;
+	margin-top: 20px;
+	margin-top: 18px\9;
+	border-top: 1px solid #e4e4e4
+}
+
+.gp-index .consult-section .consult-help .premotion img {
+	margin-bottom: -4px
+}
+
+.gp-index .news-section {
+	margin-bottom: 50px
+}
+
+.gp-index .news-section .news-main {
+	border-top: 2px solid #307fe2;
+	padding-top: 20px
+}
+
+.gp-index .news-section .news-main .news-item {
+	float: left;
+	width: 394px;
+	padding-right: 40px
+}
+
+.gp-index .news-section .news-main .news-item h5 {
+	font-size: 18px;
+	margin-bottom: 25px
+}
+
+.gp-index .news-section .news-main .news-item h5 .more {
+	display: inline-block;
+	height: 16px;
+	margin-left: 10px;
+	padding-left: 10px;
+	font-size: 14px;
+	border-left: 1px solid #bcbcbc
+}
+
+.gp-index .news-section .news-main .news-item .focus-single img {
+	float: left;
+	width: 140px;
+	height: 140px;
+	border: 1px solid #f5f5f5
+}
+
+.gp-index .news-section .news-main .news-item .focus-single .text {
+	margin-left: 155px;
+	padding-top: 10px
+}
+
+.gp-index .news-section .news-main .news-item .focus-single .text .title {
+	display: block;
+	width: 240px;
+	font-size: 16px;
+	overflow: hidden;
+	white-space: nowrap;
+	-o-text-overflow: ellipsis;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis
+}
+
+.gp-index .news-section .news-main .news-item .focus-single .text .summary {
+	display: block;
+	font-size: 14px;
+	line-height: 22px;
+	margin-top: 10px;
+	color: #888
+}
+
+.gp-index .news-section .news-main .news-item .focus-single .text .summary a {
+	color: #333
+}
+
+.gp-index .news-section .news-main .news-item .focus-single .text .summary a:hover {
+	color: #377bee
+}
+
+.gp-index .news-section .news-main .news-item .focus-list {
+	margin-top: 20px
+}
+
+.gp-index .news-section .news-main .news-item .focus-list a {
+	display: inline-block;
+	color: #333;
+	width: 300px;
+	height: 17px;
+	overflow: hidden;
+	white-space: nowrap;
+	-o-text-overflow: ellipsis;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis
+}
+
+.gp-index .news-section .news-main .news-item .focus-list a:hover {
+	color: #377bee
+}
+
+.gp-index .news-section .news-main .news-item .focus-list a .dot {
+	display: block;
+	float: left;
+	width: 4px;
+	height: 4px;
+	margin-top: 6px;
+	margin-right: 10px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	background-color: #E5E3E0
+}
+
+.gp-index .news-section .news-main .news-item .focus-list li {
+	font-size: 14px;
+	padding: 4px 0
+}
+
+.gp-index .news-section .news-main .news-item .focus-list li .date {
+	float: right;
+	color: #888;
+	font-size: 12px
+}
+
+.gp-index .news-section .news-main .news-item .focus-list .focus-forhot {
+	display: inline-block;
+	max-width: 252px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-bottom: -2px
+}
+
+.gp-index .news-section .news-main .headlth-hot,.gp-index .news-section .news-main .health-preserve,.gp-index .news-section .news-main .medical-strategy {
+	position: relative;
+	border-right: 1px dotted #bcbcbc
+}
+
+.gp-index .news-section .news-main .rumor-crusher {
+	margin-bottom: 60px;
+	padding-left: 40px
+}
+
+.gp-index .news-section .news-main .health-hot {
+	padding-left: 40px;
+	border-right: 1px dotted #bcbcbc
+}
+
+.gp-index .news-section .news-main .health-hot .jhztc-title {
+	color: #000
+}
+
+.gp-index .news-section .hot-topic {
+	width: 288px;
+	padding: 20px 20px 12px;
+	box-sizing: border-box;
+	border: 1px solid #ededed;
+	overflow: hidden;
+	margin-bottom: 10px
+}
+
+.gp-index .news-section .hot-topic .module {
+	font-size: 18px;
+	line-height: 20px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #ededed
+}
+
+.gp-index .news-section .hot-topic .module .operation {
+	float: right
+}
+
+.gp-index .news-section .hot-topic .module .operation span {
+	display: inline-block;
+	height: 10px;
+	width: 4px;
+	border-right: 1px solid #999;
+	margin-right: 4px
+}
+
+.gp-index .news-section .hot-topic .module .operation a {
+	font-size: 12px;
+	color: #333
+}
+
+.gp-index .news-section .hot-topic .module .operation .active {
+	color: #377bee
+}
+
+.gp-index .news-section .hot-topic .focus-list {
+	margin-top: 12px
+}
+
+.gp-index .news-section .hot-topic .focus-list a {
+	display: inline-block;
+	color: #333;
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	-o-text-overflow: ellipsis;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis
+}
+
+.gp-index .news-section .hot-topic .focus-list a .sort-number,.gp-index .news-section .hot-topic .focus-list a:hover {
+	color: #377bee
+}
+
+.gp-index .news-section .hot-topic .focus-list a .content {
+	margin-left: 10px
+}
+
+.gp-index .news-section .hot-topic .focus-list li {
+	font-size: 14px;
+	padding: 6px 0
+}
+
+.gp-index .news-section .hot-topic .focus-list li .date {
+	float: right;
+	color: #888;
+	font-size: 12px
+}
+
+.gp-index .news-section .wy-video {
+	width: 288px;
+	padding: 52px 0 0 26px;
+	box-sizing: border-box;
+	overflow: hidden
+}
+
+.gp-index .news-section .wy-video .module {
+	font-size: 18px;
+	line-height: 22px;
+	height: 22px;
+	padding-bottom: 11px
+}
+
+.gp-index .news-section .wy-video .module span {
+	display: inline-block;
+	height: 8px;
+	width: 8px;
+	border-right: 1px solid #999;
+	margin-right: 8px
+}
+
+.gp-index .news-section .wy-video .module a {
+	font-size: 12px
+}
+
+.gp-index .news-section .wy-video ul li {
+	height: 120px;
+	padding: 20px 0;
+	box-sizing: border-box;
+	overflow: hidden;
+	border-bottom: 1px dotted #ccc
+}
+
+.gp-index .news-section .wy-video ul li a:hover .title {
+	color: #377bee
+}
+
+.gp-index .news-section .wy-video ul li .video {
+	width: 120px;
+	height: 80px;
+	float: left;
+	position: relative
+}
+
+.gp-index .news-section .wy-video ul li .video img {
+	width: 100%;
+	height: 100%
+}
+
+.gp-index .news-section .wy-video ul li .video p {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 20px;
+	line-height: 20px;
+	opacity: .8;
+	filter: alpha(opacity=80);
+	background: #000;
+	background: -webkit-linear-gradient(top,transparent,rgba(0,0,0,.5));
+	background: linear-gradient(top,transparent,rgba(0,0,0,.5))
+}
+
+.gp-index .news-section .wy-video ul li .video p span {
+	padding: 0;
+	width: auto;
+	color: #fff;
+	float: right;
+	margin-right: 10px
+}
+
+.gp-index .news-section .wy-video ul li .video p span.dot {
+	width: 6px;
+	height: 6px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	margin: 7px 4px 0 0
+}
+
+.gp-index .news-section .wy-video ul li .video p span.dot.green {
+	background: #7bec22
+}
+
+.gp-index .news-section .wy-video ul li .video p span.dot.blue {
+	background: #377bee
+}
+
+.gp-index .news-section .wy-video ul li .video p span.dot.orange {
+	background: #f9a821
+}
+
+.gp-index .news-section .wy-video ul li span {
+	display: inline-block;
+	float: left;
+	margin-left: 10px;
+	width: 130px;
+	font-size: 12px;
+	color: #999;
+	margin-bottom: 4px;
+	overflow: hidden;
+	white-space: nowrap;
+	-o-text-overflow: ellipsis;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis
+}
+
+.gp-index .news-section .wy-video ul li span.title {
+	color: #333;
+	font-size: 12px
+}
+
+.gp-index .news-section .wy-video ul li:last-child {
+	border-bottom: 0
+}
+
+.select2-container--default .select2-results>.select2-results__options {
+	max-height: 207px!important
+}
+
+.select2-container--default .select2-results>.select2-results__options::-webkit-scrollbar {
+	width: 8px
+}
+
+.select2-container--default .select2-results>.select2-results__options::-webkit-scrollbar-track {
+	-webkit-border-radius: 10px;
+	background-color: #F4F3F2;
+	border-radius: 10px
+}
+
+.select2-container--default .select2-results>.select2-results__options::-webkit-scrollbar-thumb {
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background: #DBD8D3
+}
+
+.select2-container--default .select2-results>.select2-results__options::-webkit-scrollbar-thumb:window-inactive {
+	background: #DBD8D3
+}
+
+.select2-dropdown {
+	border-color: #c7d7eb!important
+}

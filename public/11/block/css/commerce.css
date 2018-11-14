@@ -1,0 +1,128 @@
+html,body{
+    height:100%;
+}
+.commerce{
+    height:100%;
+    background: url("../images/index_bg.png") no-repeat;
+    width:100%;
+    -webkit-background-size:100% 100%;
+    background-size:100% 100%;
+    padding-top:0.8rem;
+    padding-bottom:1.52rem;
+    overflow: scroll;
+}
+.commerce>.title{
+    text-align: center;
+    background: url("../images/infotitle_bg.png") center bottom no-repeat;
+    -webkit-background-size:4.1rem 0.34rem;
+    background-size:4.1rem 0.34rem;
+    height:1.34rem;
+    font-size: 0.64rem;
+    line-height:1.34rem;
+    color: #d8c45d;
+    font-family:"Microsoft YaHei UI";
+}
+.commerce>.tips{
+    text-align: center;
+    color: rgba(255,10,0,1);
+    font-size: 0.32rem;
+    font-family: microsoft yahei;
+    margin-bottom: 0.28rem;
+    height:0.48rem;
+}
+.commerce>.tips>p{
+    display: none;
+}
+.commerce>.creat-commerce{
+    height:0.6rem;
+    padding:0 0.68rem;
+    margin-bottom: 0.4rem;
+}
+.commerce>.creat-commerce>input{
+    height:0.6rem;
+    width:70%;
+    background-color: #fff;
+    float: left;
+    padding-left:0.4rem;
+    font-family: "Microsoft YaHei UI";
+}
+.commerce>.creat-commerce>span{
+    background-color: #805716;
+    font-family: "Microsoft YaHei UI";
+    color: #ffffff;
+    font-size:0.28rem;
+    text-align: center;
+    float: left;
+    height: 0.6rem;
+    line-height:0.6rem;
+    font-size:0.32rem;
+    display: inline-block;
+    width:30%;
+}
+
+
+.commerce>.join-to-commerce{
+    height:0.6rem;
+    padding:0 0.68rem;
+}
+.commerce>.join-to-commerce>input{
+    height:0.6rem;
+    width:4.1rem;
+    background-color: #fff;
+    float: left;
+    padding-left:0.4rem;
+    font-family: "Microsoft YaHei UI";
+}
+.commerce>.join-to-commerce>span{
+    background-color: #805716;
+    font-family: "Microsoft YaHei UI";
+    color: #ffffff;
+    font-size:0.28rem;
+    text-align: center;
+    float: left;
+    height: 0.6rem;
+    line-height:0.6rem;
+    font-size:0.32rem;
+    display: inline-block;
+    width:2.04rem;
+}
+.commerce>.earth{
+    background: url(../images/earth.png) center top no-repeat;
+    -webkit-background-size:110%;
+    background-size:110%;
+    width: 100%;
+    height: 7.5rem;
+    position: fixed;
+    bottom: -1rem;
+}
+
+.commerce>.tab{
+    height:1.52rem;
+    background-color: #202627;
+    position: fixed;
+    bottom:0;
+    width:100%;
+    font-family: "Microsoft YaHei UI";
+    font-size:0.32rem;
+}
+.commerce>.tab>ul>li{
+    float: left;
+    width:33.333333%;
+    height:1.5rem;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+}
+.commerce>.tab>ul>li>img{
+    position: absolute;
+    top:0%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:0.8rem;
+}
+.commerce>.tab>ul>li>img:first-child{
+    width:1.5rem;
+}
+.commerce>.tab>ul>li>p{
+    margin-top:0.8rem;
+}

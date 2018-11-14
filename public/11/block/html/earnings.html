@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <title>收益明细</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/earnings.css">
+    <script src="../js/jquery-1.11.0.min.js"></script>
+    <script>
+        (function(designWidth, maxWidth) {
+            var doc = document,
+                win = window,
+                docEl = doc.documentElement,
+                remStyle = document.createElement("style"),
+                tid;
+
+            function refreshRem() {
+                var width = docEl.getBoundingClientRect().width;
+                maxWidth = maxWidth || 540;
+                width>maxWidth && (width=maxWidth);
+                var rem = width * 100 / designWidth;
+                remStyle.innerHTML = 'html{font-size:' + rem + 'px;}';
+            }
+
+            if (docEl.firstElementChild) {
+                docEl.firstElementChild.appendChild(remStyle);
+            } else {
+                var wrap = doc.createElement("div");
+                wrap.appendChild(remStyle);
+                doc.write(wrap.innerHTML);
+                wrap = null;
+            }
+            //要等 wiewport 设置好后才能执行 refreshRem，不然 refreshRem 会执行2次；
+            refreshRem();
+
+            win.addEventListener("resize", function() {
+                clearTimeout(tid); //防止执行两次
+                tid = setTimeout(refreshRem, 300);
+            }, false);
+
+            win.addEventListener("pageshow", function(e) {
+                if (e.persisted) { // 浏览器后退的时候重新计算
+                    clearTimeout(tid);
+                    tid = setTimeout(refreshRem, 300);
+                }
+            }, false);
+
+            if (doc.readyState === "complete") {
+                doc.body.style.fontSize = "16px";
+            } else {
+                doc.addEventListener("DOMContentLoaded", function(e) {
+                    doc.body.style.fontSize = "16px";
+                }, false);
+            }
+        })(750, 750);
+    </script>
+</head>
+<body>
+<div class="earnings">
+    <div class="chart">
+        <img src="../images/circle.gif" alt="" class="gif">
+        <img src="../images/tmp.fw.png" alt="" class="static">
+    </div>
+    <div class="total-calc">
+        <img src="../images/announcement_bg.png" alt="">
+        <p>礦機總算力 : <span></span></p>
+    </div>
+    <div class="detail">
+        <table>
+            <thead>
+                <tr>
+                    <th>時間</th>
+                    <th>收益</th>
+                    <th>來源</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+    <div class="tab">
+        <ul class="clearfix">
+            <li class="prepage">
+                <img src="../images/tab_bg.png" alt="">
+                <img src="../images/prepge.png" alt="">
+                <p>上一頁</p>
+            </li>
+            <li class="toindex">
+                <img src="../images/tab_bg.png" alt="">
+                <img src="../images/home.png" alt="">
+                <p>系統中心</p>
+            </li>
+            <li class="back">
+                <img src="../images/tab_bg.png" alt="">
+                <img src="../images/info.png" alt="">
+                <p>收件匣</p>
+            </li>
+        </ul>
+    </div>
+</div>
+<script src="../js/earnings.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/account.css">
+    <script src="../js/jquery-1.11.0.min.js"></script>
+    <title>個人中心</title>
+    <script>
+        (function(designWidth, maxWidth) {
+            var doc = document,
+                win = window,
+                docEl = doc.documentElement,
+                remStyle = document.createElement("style"),
+                tid;
+
+            function refreshRem() {
+                var width = docEl.getBoundingClientRect().width;
+                maxWidth = maxWidth || 540;
+                width>maxWidth && (width=maxWidth);
+                var rem = width * 100 / designWidth;
+                remStyle.innerHTML = 'html{font-size:' + rem + 'px;}';
+            }
+
+            if (docEl.firstElementChild) {
+                docEl.firstElementChild.appendChild(remStyle);
+            } else {
+                var wrap = doc.createElement("div");
+                wrap.appendChild(remStyle);
+                doc.write(wrap.innerHTML);
+                wrap = null;
+            }
+            //要等 wiewport 设置好后才能执行 refreshRem，不然 refreshRem 会执行2次；
+            refreshRem();
+
+            win.addEventListener("resize", function() {
+                clearTimeout(tid); //防止执行两次
+                tid = setTimeout(refreshRem, 300);
+            }, false);
+
+            win.addEventListener("pageshow", function(e) {
+                if (e.persisted) { // 浏览器后退的时候重新计算
+                    clearTimeout(tid);
+                    tid = setTimeout(refreshRem, 300);
+                }
+            }, false);
+
+            if (doc.readyState === "complete") {
+                doc.body.style.fontSize = "16px";
+            } else {
+                doc.addEventListener("DOMContentLoaded", function(e) {
+                    doc.body.style.fontSize = "16px";
+                }, false);
+            }
+        })(750, 750);
+    </script>
+</head>
+<body>
+<div class="account">
+    <div class="title">個人中心</div>
+    <div class="account-form">
+        <div class="nickname"><div><img src="../images/person.png" alt=""></div><input type="text" placeholder="用戶名稱 / Login ID" disabled></div>
+        <div class="oldpass"><div><img src="../images/password.png" alt=""></div><input type="text" placeholder="舊密碼 / Old Password" ></div>
+        <div class="newpass"><div><img src="../images/password.png" alt=""></div><input type="text" placeholder="新密碼 / New Password" ></div>
+        <div class="confirmpass"><div><img src="../images/password.png" alt=""></div><input type="text" placeholder="確認新密碼 / Confirm Passwor" ></div>
+        <div class="phone"><div><img src="../images/phone.png" alt=""></div><input type="text" placeholder="聯絡電話 / Phone Number"></div>
+        <div class="name"><div><img src="../images/person.png" alt=""></div><input type="text" placeholder="真實姓名 / Name" ></div>
+        <div class="person-ID">
+            <div>
+                <img src="../images/person.png" alt="">
+            </div>
+            <input type="text" placeholder="身份證 / Personal ID No">
+            <div class="photo">
+                <img src="../images/photo.png" alt="">
+                <input type="file" id='image' accept="image/*">
+            </div>
+        </div>
+        <div class="bank"><div><img src="../images/bank.png" alt=""></div><input type="text" placeholder="銀行名稱 / Bank Name"></div>
+        <div class="bank-number"><div><img src="../images/bank_card.png" alt=""></div><input type="text" placeholder="銀行卡號碼 / Bank Card No"></div>
+        <div class="alipay"><div><img src="../images/alipay.png" alt=""></div><input type="text" placeholder="支付寶 / Alipay"></div>
+        <div class="wechat"><div><img src="../images/wechat.png" alt=""></div><input type="text" placeholder="微信號 / Wechat ID"></div>
+        <div class="updateInfo">確認修改</div>
+    </div>
+    <div class="tab">
+        <ul class="clearfix">
+            <li class="prepage"><img src="../images/tab_bg.png" alt=""><img src="../images/prepge.png" alt=""><p>上一頁</p></li>
+            <li class="toindex"><img src="../images/tab_bg.png" alt=""><img src="../images/home.png" alt=""><p>系統中心</p></li>
+            <li class="back"><img src="../images/tab_bg.png" alt=""><img src="../images/info.png" alt=""><p>收件匣</p></li>
+        </ul>
+    </div>
+</div>
+<script src="../js/account.js"></script>
+</body>
+</html>

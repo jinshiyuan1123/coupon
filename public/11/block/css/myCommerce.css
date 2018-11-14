@@ -1,0 +1,151 @@
+html,body{
+    height:100%;
+}
+.single-commerce{
+    height:100%;
+    width:100%;
+    background: url("../images/index_bg.png");
+    -webkit-background-size:100% 100%;
+    background-size:100% 100%;
+    padding-bottom:4.3rem;
+    overflow: scroll;
+}
+.single-commerce>.commerce-title{
+    height:1.4rem;
+    background: url("../images/infotitle_bg.png") center bottom no-repeat;
+    -webkit-background-size:4.1rem 0.34rem;
+    background-size:4.1rem 0.34rem;
+    line-height:1.4rem;
+    color: #d8c45d;
+    font-size:0.62rem;
+    text-align: center;
+}
+.single-commerce>.commerce-info{
+    position: fixed;
+    bottom: 1.4rem;
+    /*height: 2rem;*/
+    width: 100%;
+    background: #000;
+    -webkit-background-size: 6rem 0.34rem;
+    background-size: 6rem 0.34rem;
+    padding: 0 0 0.9rem;
+    text-align: center;
+}
+.single-commerce>.commerce-info>img{
+    width:7rem;
+    height:0.3rem;
+    vertical-align: top;
+}
+.single-commerce>.commerce-info>img:first-child{
+    vertical-align: bottom;
+}
+.single-commerce>.commerce-info>ul{
+    height:1.2rem;
+    width:100%;
+    font-family: "Microsoft YaHei UI";
+    text-align: left;
+    /*padding:0.09rem 0;*/
+}
+.single-commerce>.commerce-info>ul>li{
+    width:50%;
+    float: left;
+    color: #ffffff;
+    height:0.6rem;
+    line-height:0.6rem;
+    padding-left:1rem;
+    font-size:0.30rem;
+}
+.single-commerce>.commerce-info>ul>li:nth-child(2),
+.single-commerce>.commerce-info>ul>li:nth-child(4){
+	padding-left:0.3rem;
+}
+.single-commerce>.commerce-info>ul>.total-cal,
+.single-commerce>.commerce-info>ul>.ranking{
+    width:50%;
+}
+.single-commerce>.member{
+    margin-top:0.54rem;
+    /*height:6.4rem;*/
+    /*overflow: scroll;*/
+}
+.single-commerce>.member>li{
+    font-size: 0.32rem;
+    height: 0.32rem;
+    line-height: 0.3rem;
+    margin-bottom: 0.28rem;
+    color: #ffffff;
+    font-family: "Microsoft YaHei UI";
+    text-align: center;
+}
+.single-commerce>.tips{
+    height: 0.48rem;
+    color: rgba(255,10,0,1);
+    text-align: center;
+    font-size: 0.32rem;
+    font-family: microsoft yahei;
+}
+.single-commerce>.tips>p{
+    display: none;
+}
+.single-commerce>.join-to-commerce{
+    height:0.6rem;
+    padding:0 0.9rem;
+    margin-top:0.1rem;
+    bottom:1.6rem;
+}
+.single-commerce>.join-to-commerce>input{
+    height:0.6rem;
+    width:70%;
+    background-color: #fff;
+    float: left;
+    padding-left:0.4rem;
+    font-family: "Microsoft YaHei UI";
+}
+.single-commerce>.join-to-commerce>span{
+    background-color: rgba(234,180,88,0.6);
+    font-family: "Microsoft YaHei UI";
+    color: #ffffff;
+    font-size:0.28rem;
+    text-align: center;
+    float: left;
+    height: 0.6rem;
+    line-height:0.6rem;
+    font-size:0.32rem;
+    display: inline-block;
+    width:30%;
+}
+
+.single-commerce>.tab{
+    height:1.52rem;
+    background-color: #202627;
+    position: fixed;
+    bottom:0;
+    width:100%;
+    font-family: "Microsoft YaHei UI";
+    font-size:0.32rem;
+}
+.single-commerce>.tab>ul>li{
+    float: left;
+    width:33.333333%;
+    height:1.5rem;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+}
+.single-commerce>.tab>ul>li>img{
+    position: absolute;
+    top:0%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:0.8rem;
+}
+.single-commerce>.tab>ul>li>img:first-child{
+    width:1.5rem;
+}
+.single-commerce>.tab>ul>li>p{
+    margin-top:0.8rem;
+}
+/*.single-commerce>.tab>ul>.toindex{*/
+    /*background-color: #65f0ed;*/
+    /*margin:0 2%;*/
+/*}*/

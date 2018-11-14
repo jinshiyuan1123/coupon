@@ -1,0 +1,102 @@
+html,body{
+    height:100%;
+}
+.infoCenter{
+    height:100%;
+    width:100%;
+    background: url("../images/index_bg.png");
+    -webkit-background-size:100% 100%;
+    background-size:100% 100%;
+    padding-bottom: 2.3rem;
+    overflow: scroll;
+}
+.infoCenter>.title{
+    text-align: center;
+    background: url("../images/infotitle_bg.png") center bottom no-repeat;
+    -webkit-background-size:4.1rem 0.34rem;
+    background-size:4.1rem 0.34rem;
+    height:1.34rem;
+    font-size: 0.64rem;
+    line-height:1.34rem;
+    color: #d8c45d;
+    font-family:"Microsoft YaHei UI";
+}
+.infoCenter>.info{
+    padding:0 0.36rem;
+    margin-top:0.3rem;
+}
+.infoCenter>.info>.info-list>li{
+    background-color: rgba(120,196,207,0.6);
+    height:1.32rem;
+    margin-top:0.1rem;
+    padding-top:0.2rem;
+    font-size: 0.24rem;
+    color: #ffffff;
+    font-family:"Microsoft YaHei UI";
+    overflow: scroll;
+}
+.infoCenter>.info>.info-list>li:nth-child(2n){
+    background-color: rgba(92,188,225,0.6);
+}
+.infoCenter>.info>.info-list>li>div{
+    float: left;
+}
+.infoCenter>.info>.info-list>li>.date{
+    width:2.4rem;
+}
+.infoCenter>.info>.info-list>li>.date>p{
+    height: 0.32rem;
+    line-height: 0.32rem;
+    padding-left: 0.2rem;
+}
+.infoCenter>.info>.info-list>li>.desc{
+    width:4.3rem;
+    padding-left:0.1rem;
+}
+.infoCenter>.info>.info-list>li>.desc>p{
+    line-height: 0.32rem;;
+    padding-right:0.2rem;
+}
+
+.infoCenter>.tab{
+    height:1.52rem;
+    background-color: #202627;
+    position: fixed;
+    bottom:0;
+    width:100%;
+    font-family: "Microsoft YaHei UI";
+    font-size:0.32rem;
+}
+.infoCenter>.tab>ul>li{
+    float: left;
+    width:33.333333%;
+    height:1.5rem;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+}
+.infoCenter>.tab>ul>li>img{
+    position: absolute;
+    top:0%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:0.8rem;
+}
+.infoCenter>.tab>ul>li>img:first-child{
+    width:1.5rem;
+}
+.infoCenter>.tab>ul>li>p{
+    margin-top:0.8rem;
+}
+/*.infoCenter>.tab>ul>.toindex{*/
+    /*background-color: #65f0ed;*/
+    /*margin:0 2%;*/
+/*}*/
+.infoCenter>.nodata{
+    color: #fff;
+    font-size: 0.5rem;
+    text-align: center;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    display: none;
+}
