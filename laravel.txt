@@ -1,0 +1,17 @@
+php artisan migrate命令是laravel十分重要的问题，但在使用时需要注意几个情况：
+
+（1）在migration文件夹下创建一张新的表，要使用php artisan make:migration语句
+
+??????? php artisan已经拥有强大的功能，就不要自己新建一个表
+
+（2）composer dump-autoload的使用
+--------------------- 
+
+laravel
+
+composer create-project laravel/laravel blog --prefer-dist //安装laravel源码
+php artisan migrate
+php artisan serve 或者 php -S localhost:8888 -t public
+php artisan make:controller sitescontroller
+创建demo： php artisan make:auth
+
